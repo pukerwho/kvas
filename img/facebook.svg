@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="20px" viewBox="0 0 10 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ion-social-facebook - Ionicons</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main-page(Kvass)" transform="translate(-1163.000000, -45.000000)" fill="#ABABAB">
+            <g id="header">
+                <g id="social" transform="translate(1105.000000, 37.000000)">
+                    <g id="Group-19" transform="translate(45.000000, 0.000000)">
+                        <path d="M19.5,14.5 L22.75,14.5 L22.34375,17.75 L19.5,17.75 L19.5,27.5 L15.2851562,27.5 L15.2851562,17.75 L13,17.75 L13,14.5 L15.2851562,14.5 L15.2851562,12.3164062 C15.2851562,10.8945241 15.6406214,9.8196651 16.3515625,9.09179688 C17.0625036,8.36392865 18.2473875,8 19.90625,8 L22.75,8 L22.75,11.25 L21.0234375,11.25 C20.3802051,11.25 19.9654957,11.3515615 19.7792969,11.5546875 C19.593098,11.7578135 19.5,12.0963518 19.5,12.5703125 L19.5,14.5 Z" id="ion-social-facebook---Ionicons"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
