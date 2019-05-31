@@ -32,7 +32,9 @@ Template Name: Страница КВАСОВАРНЯ
 										<div class="p_brewery__img">
 											<img src="<?php echo $brew['crb_brewery_photo'] ?>" alt="">
 											<div class="p_brewery__number">
-												<?php echo $brew_number ?>.
+												<div class="p_brewery__number-inner">
+													<?php echo $brew_number ?>.	
+												</div>
 											</div>
 											<div class="slider-puk-left">
 												<img src="<?php bloginfo('template_url') ?>/img/left.svg" alt="">

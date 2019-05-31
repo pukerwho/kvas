@@ -45,12 +45,12 @@ $('.slider-puk-right').on('click', function(){
     sliderPukSlideIterator += sliderPukWidth;
     slidePukId.each(function(){
       var currentSlide = $(this).data('slider-puk-id');
-      var prevSlide = $(this).prev();
-      // $(prevSlide.className).find('.p_brewery__img img').addClass('slider-puk-prev');
       $('.slider-puk-wrapper').css({'transform':'translate3d(' + sliderPukMove + 'px, 0px, 0px)'})
       if(currentSlide === sliderPukI) {
         $(this).addClass('slider-puk-active');
         // $(this).find('.p_brewery__img img').css({'transform':'translateX(-100%)'});
+        var prevSlide = $(this).prev();
+        $(prevSlide).find('.p_brewery__img img').addClass('slider-puk-prev');
         return;
       } else {
         $(this).removeClass('slider-puk-active');

@@ -8983,14 +8983,6 @@ a:hover {
 .slider-puk-active {
   display: block; }
 
-.slider-puk-prev {
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
-  -webkit-transition: all 0.25s cubic-bezier(1, 0.28, 0.43, 0.99);
-  -o-transition: all 0.25s cubic-bezier(1, 0.28, 0.43, 0.99);
-  transition: all 0.25s cubic-bezier(1, 0.28, 0.43, 0.99); }
-
 /* CONTACT ICON */
 .contact-icon {
   width: 35px;
@@ -9687,7 +9679,8 @@ a:hover {
       font-size: 47px;
       background-color: #de0027;
       -webkit-border-radius: 50%;
-      border-radius: 50%; }
+      border-radius: 50%;
+      overflow: hidden; }
     .p_brewery .slider-puk-left {
       width: 27px;
       position: absolute;
@@ -9714,11 +9707,35 @@ a:hover {
       -webkit-transition: all 0.4s;
       -o-transition: all 0.4s;
       transition: all 0.4s; }
+    .p_brewery .slider-puk-slide .p_brewery__number-inner {
+      -webkit-transform: translateY(-110%);
+      -ms-transform: translateY(-110%);
+      transform: translateY(-110%);
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s; }
+    .p_brewery .slider-puk-slide .p_brewery__text {
+      opacity: 0;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s; }
     .p_brewery .slider-puk-active .p_brewery__subtitle {
       opacity: 1;
       -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
       transform: translateY(0%);
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s; }
+    .p_brewery .slider-puk-active .p_brewery__number-inner {
+      -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      transform: translateY(0%);
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s; }
+    .p_brewery .slider-puk-active .p_brewery__text {
+      opacity: 1;
       -webkit-transition: all 0.4s;
       -o-transition: all 0.4s;
       transition: all 0.4s; }
