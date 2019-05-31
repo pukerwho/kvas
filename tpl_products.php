@@ -69,19 +69,19 @@ Template Name: Страница ПРОДУКТЫ
 											</div>
 											<div class="p_products__modal-item">
 												<div class="p_products__modal-text">
-													<img src="<?php bloginfo('template_url') ?>/img/plate.svg" alt="">
+													<img src="<?php bloginfo('template_url') ?>/img/product-icon2.png" alt="">
 													Объем
 												</div>
 												<div class="p_products__modal-text">
-													<img src="<?php bloginfo('template_url') ?>/img/plate.svg" alt="">
+													<img src="<?php bloginfo('template_url') ?>/img/product-icon3.png" alt="">
 													Количество в коробке:
 												</div>
 												<div class="p_products__modal-text">
-													<img src="<?php bloginfo('template_url') ?>/img/plate.svg" alt="">
+													<img src="<?php bloginfo('template_url') ?>/img/product-icon4.png" alt="">
 													Упаковка
 												</div>
 												<div class="p_products__modal-text">
-													<img src="<?php bloginfo('template_url') ?>/img/plate.svg" alt="">
+													<img src="<?php bloginfo('template_url') ?>/img/product-icon5.png" alt="">
 													Хранение
 												</div>
 											</div>
