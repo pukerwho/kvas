@@ -70,7 +70,9 @@
                 </a>
                 <a href="#">
                   <div class="contact-icon mr-0">
-                    RU
+                    <div class="header__lang">
+                      RU
+                    </div>
                   </div>
                 </a>
               </div>

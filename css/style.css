@@ -9239,6 +9239,10 @@ a:hover {
     padding: 10px 0; }
     .header__logo img {
       height: 90px; }
+  .header__lang {
+    color: #989898;
+    font-family: Oswald-Regular;
+    font-size: 18px; }
   .header__center {
     position: absolute;
     top: 0;
@@ -9719,6 +9723,14 @@ a:hover {
       -webkit-transition: all 0.4s;
       -o-transition: all 0.4s;
       transition: all 0.4s; }
+    .p_brewery .slider-puk-slide .kvas-button {
+      opacity: 0;
+      -webkit-transform: translateX(-15%);
+      -ms-transform: translateX(-15%);
+      transform: translateX(-15%);
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
     .p_brewery .slider-puk-active .p_brewery__subtitle {
       opacity: 1;
       -webkit-transform: translateY(0%);
@@ -9739,6 +9751,14 @@ a:hover {
       -webkit-transition: all 0.4s;
       -o-transition: all 0.4s;
       transition: all 0.4s; }
+    .p_brewery .slider-puk-active .kvas-button {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      transform: translateX(0%);
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
   .p_products {
     position: relative;
     padding-top: 30px;
