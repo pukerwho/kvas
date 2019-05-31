@@ -9418,6 +9418,15 @@ a:hover {
       margin-bottom: 100px; }
     .p_main__products .swiper-products {
       margin-bottom: 100px; }
+  .p_main__questions-absolute {
+    height: 470px;
+    width: 134px;
+    position: absolute;
+    left: 50%;
+    background-image: -webkit-gradient(linear, right top, left top, from(#02ba66), to(rgba(2, 186, 103, 0.43)));
+    background-image: -webkit-linear-gradient(right, #02ba66, rgba(2, 186, 103, 0.43));
+    background-image: -o-linear-gradient(right, #02ba66, rgba(2, 186, 103, 0.43));
+    background-image: linear-gradient(to left, #02ba66, rgba(2, 186, 103, 0.43)); }
   .p_main__questions-content {
     height: 470px;
     display: -webkit-box;
