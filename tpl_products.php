@@ -114,7 +114,6 @@ Template Name: Страница ПРОДУКТЫ
 										<div class="p_products__modal-line"></div>
 									</div>
 								</div>
-								<!-- 
 								<div class="row">
 									<div class="col-md-12">
 										<div class="swiper-products swiper-container">
@@ -146,7 +145,6 @@ Template Name: Страница ПРОДУКТЫ
 										</div>
 									</div>
 								</div>
-								-->
 							</div>
 						</div>
 					</div>

@@ -9850,6 +9850,7 @@ a:hover {
         background-color: #ffffff;
         -webkit-box-shadow: 0 4px 17px 0 rgba(184, 184, 184, 0.5);
         box-shadow: 0 4px 17px 0 rgba(184, 184, 184, 0.5);
+        overflow: hidden;
         padding-top: 40px; }
       .p_products__modal-title {
         color: #023753;
