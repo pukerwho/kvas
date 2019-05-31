@@ -86,7 +86,7 @@ $('.p_products__modal-close').on('click', function(){
 
 //POSTS 
 if ($(document).width() > 760) {
-  var swiperProducts = new Swiper('.p_posts__slider', {
+  var swiperPosts = new Swiper('.p_posts__slider', {
     slidesPerView: 3,
     loop: true,
     pagination: {

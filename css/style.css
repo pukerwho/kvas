@@ -9165,12 +9165,12 @@ a:hover {
       font-size: 19px;
       margin-bottom: 20px; }
 
-.menu ul {
+.menu {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-  .menu ul li {
+  .menu li {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -9180,9 +9180,9 @@ a:hover {
     border: solid 1px transparent;
     margin-right: 30px;
     padding: 7px 10px; }
-    .menu ul li:last-child {
+    .menu li:last-child {
       margin-right: 0; }
-    .menu ul li a {
+    .menu li a {
       color: #023753;
       font-family: Oswald-Regular;
       font-size: 15px;
