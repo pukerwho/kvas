@@ -9312,6 +9312,10 @@ a:hover {
   padding: 20px 0; }
   .footer__logo img {
     height: 110px; }
+.footer__lang {
+  color: #989898;
+  font-family: Oswald-Regular;
+  font-size: 18px; }
 
 @font-face {
   font-family: 'Oswald-ExtraLight';
@@ -10204,7 +10208,8 @@ a:hover {
       height: 10px;
       background: #de0027;
       position: absolute;
-      top: 13px;
+      top: -webkit-calc(50% - 5px);
+      top: calc(50% - 5px);
       left: 8px;
       -webkit-border-radius: 100%;
       border-radius: 100%;
