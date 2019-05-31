@@ -8,6 +8,75 @@ Template Name: Главная страница
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="p_main">
+	<div class="p_brewery">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="p_brewery__title">
+						Квасоварня
+					</div>
+					<div class="p_brewery__line"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="slider-puk-container">
+						<div class="slider-puk-wrapper">
+							<?php 
+		          $args_brewery = [
+		              'post_type' => 'page',
+		              'fields' => 'ids',
+		              'nopaging' => true,
+		              'meta_key' => '_wp_page_template',
+		              'meta_value' => 'tpl_brewery.php'
+		          ];
+		          $pages_brewery = get_posts( $args_brewery );
+		          foreach ( $pages_brewery as $pages_brew ): ?>
+		          	<?php 
+								$brewery = carbon_get_post_meta($pages_brew, 'crb_brewery');
+								foreach ( $brewery as $brew ): ?>
+									<?php $brew_number++; ?>
+									<div class="slider-puk-slide" data-slider-puk-id="<?php echo $brew_number ?>">
+										<div class="p_brewery__grid">
+											<div class="animate-puk-mask">
+												<div class="p_brewery__img">
+													<img src="<?php echo $brew['crb_brewery_photo'] ?>" alt="">
+													<div class="p_brewery__number">
+														<div class="p_brewery__number-inner">
+															<?php echo $brew_number ?>.	
+														</div>
+													</div>
+													<div class="slider-puk-left">
+														<img src="<?php bloginfo('template_url') ?>/img/left.svg" alt="">
+													</div>
+													<div class="slider-puk-right">
+														<img src="<?php bloginfo('template_url') ?>/img/right.svg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="p_brewery__content">
+												<div class="animate-puk-mask">
+													<div class="p_brewery__subtitle">
+														<?php echo $brew['crb_brewery_title'] ?>
+													</div>
+												</div>
+												<div class="p_brewery__text">
+													<?php echo $brew['crb_brewery_text'] ?>
+												</div>
+												<div class="kvas-button">
+													Узнать подробности
+												</div>
+											</div>
+										</div>
+									</div>
+								<?php endforeach; ?>
+							<?php endforeach; ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="p_main__brand">
 		<div class="p_main__brand-content">
 			<div class="container">
@@ -133,8 +202,7 @@ Template Name: Главная страница
 									<?php $i++; $i=$i/2 ?>
 									<div class="swiper-slide">
 										<div class="p_main__advantages-photo">
-											<img src="<?php bloginfo('template_url') ?>/img/icon-1.svg" alt="">
-											<!-- <img src="<?php echo $advantage['crb_advantages_photo'] ?>"> -->
+											<img src="<?php echo $advantage['crb_advantages_photo'] ?>">
 										</div>
 										<div class="p_main__advantages-text">
 											<?php echo $advantage['crb_advantages_text'] ?>
