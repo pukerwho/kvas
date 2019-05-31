@@ -79,6 +79,8 @@ swiperProductsFunc();
 
 //Product Modal 
 $('.p_products__slide').on('click', function(){
+  $('.p_products__modal').removeClass('p_products__modal-open');
+  $('.p_products__block').removeClass('p_products__block-hide');
   productModal = $(this).data('product-slide');
   $('.'+productModal+'').addClass('p_products__modal-open');
   $('.p_products__block').addClass('p_products__block-hide');
