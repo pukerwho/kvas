@@ -10167,14 +10167,6 @@ a:hover {
       font-size: 40px;
       margin-right: 18px; }
     .p_test__answers {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
       margin-bottom: 30px; }
     .p_test__answer {
       color: #023753;
