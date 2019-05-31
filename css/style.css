@@ -9576,6 +9576,13 @@ a:hover {
       padding: 15px 20px; }
       .p_faq__item-open .p_faq__question {
         margin-bottom: 18px; }
+        .p_faq__item-open .p_faq__question-toggle {
+          -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+          -webkit-transition: 0.4s all;
+          -o-transition: 0.4s all;
+          transition: 0.4s all; }
       .p_faq__item-open .p_faq__line {
         display: block; }
       .p_faq__item-open .p_faq__answer-text {
@@ -9599,6 +9606,13 @@ a:hover {
       color: #023753;
       font-family: Oswald-Regular;
       font-size: 18px; }
+      .p_faq__question-toggle {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.4s all;
+        -o-transition: 0.4s all;
+        transition: 0.4s all; }
     .p_faq__line {
       width: 100%;
       height: 1px;
