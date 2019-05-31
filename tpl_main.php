@@ -212,6 +212,9 @@ Template Name: Главная страница
 		          <?php endforeach; ?>
 						</div>
 					</div>
+					<div class="d-flex justify-content-center">
+						<div class="swiper-pagination"></div>	
+					</div>
 				</div>
 			</div>
 		</div>
