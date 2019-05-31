@@ -77,11 +77,13 @@ if ($(document).width() > 760) {
 $('.p_products__slide').on('click', function(){
   productModal = $(this).data('product-slide');
   $('.'+productModal+'').addClass('p_products__modal-open');
+  $('.p_products__block').addClass('p_products__block-hide');
   scrollToTop();
 })
 
 $('.p_products__modal-close').on('click', function(){
   $('.p_products__modal').removeClass('p_products__modal-open');
+  $('.p_products__block').removeClass('p_products__block-hide');
 })
 
 //POSTS 

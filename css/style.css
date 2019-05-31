@@ -9013,7 +9013,15 @@ a:hover {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   border: solid 1px #a9a9a9;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
   margin-right: 10px; }
+  .contact-icon:hover {
+    border: solid 1px #ea022d;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
   .contact-icon__email {
     height: 13px; }
   .contact-icon__facebook {
@@ -9826,13 +9834,16 @@ a:hover {
       background-image: url("../img/left.svg"); }
     .p_products .b_products {
       margin-bottom: 80px; }
+    .p_products__block {
+      display: block; }
+      .p_products__block-hide {
+        display: none; }
     .p_products__modal {
       display: none; }
       .p_products__modal-open {
         width: 100%;
         display: block;
-        position: absolute;
-        top: 30px;
+        position: relative;
         z-index: 3; }
       .p_products__modal-box {
         min-height: 100vh;
