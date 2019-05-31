@@ -9470,12 +9470,19 @@ a:hover {
     .p_main__advantages-photo {
       width: 155px;
       height: 155px;
+      text-align: center;
+      margin: auto;
       margin-bottom: 30px; }
       .p_main__advantages-photo img {
         width: 100%;
         height: 100%;
         -o-object-fit: cover;
         object-fit: cover; }
+    .p_main__advantages-text {
+      color: #023753;
+      font-family: Oswald-Light;
+      font-size: 18px;
+      text-align: center; }
     .p_main__advantages .swiper-slide {
       text-align: center; }
   .p_main__test {

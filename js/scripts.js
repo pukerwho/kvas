@@ -104,6 +104,9 @@ if ($(document).width() > 760) {
   var swiperAdvantages = new Swiper('.p_main__advantages-slider', {
     slidesPerView: 3,
     loop: true,
+    autoplay: {
+      delay: 5000,
+    },
     pagination: {
       el: '.swiper-pagination',
     },
