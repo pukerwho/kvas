@@ -82,17 +82,23 @@ Template Name: Главная страница
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="p_main__brand-title">
-							Бренд Арсеньевский
-						</div>
-						<div class="p_main__brand-description">
-							We Use Best Quality Products for Our Kvass
-						</div>
-						<a href="<?php echo get_page_url('tpl_brand') ?>">
-							<div class="kvas-button">
-								Узнать больше
+						<div class="animate-puk-mask">
+							<div class="p_main__brand-title animate-puk" data-effect="fade-up" data-delay="0.8s">
+								Бренд Арсеньевский
 							</div>
-						</a>
+						</div>
+						<div class="animate-puk-mask">
+							<div class="p_main__brand-description animate-puk" data-effect="fade-up" data-delay="1.2s">
+								We Use Best Quality Products for Our Kvass
+							</div>
+						</div>
+						<div class="animate-puk-mask">
+							<a href="<?php echo get_page_url('tpl_brand') ?>">
+								<div class="kvas-button animate-puk" data-effect="fade-up" data-delay="1.5s">
+									Узнать больше
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -105,12 +111,16 @@ Template Name: Главная страница
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="p_main__products-title">
-						Наша продукция
+					<div class="animate-puk-mask">
+						<div class="p_main__products-title animate-puk" data-effect="fade-up" data-delay="0.8s">
+							Наша продукция
+						</div>
 					</div>
 					<div class="p_main__products-line"></div>
-					<div class="p_main__products-description">
-						We Are Really Good
+					<div class="animate-puk-mask">
+						<div class="p_main__products-description animate-puk" data-effect="fade-up" data-delay="1.2s">
+							We Are Really Good
+						</div>
 					</div>
 				</div>
 			</div>
@@ -121,15 +131,20 @@ Template Name: Главная страница
 							<?php
 							$custom_query_products = new WP_Query( array( 'post_type' => 'products') );
 							if ($custom_query_products->have_posts()) : while ($custom_query_products->have_posts()) : $custom_query_products->the_post(); ?>
-								<div class="p_products__slide swiper-slide" data-product-slide="product-<?php echo get_the_id(); ?>">
-									<div class="p_products__slide-top">
-										<div class="p_products__slide-cover" style="background-color: <?php echo carbon_get_the_post_meta('crb_product_color') ?>;"></div>
-										<div class="p_products__slide-photo">
-											<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+								<?php $i++; $i=$i/1.5 ?>
+								<div class="p_products__slide swiper-slide animate-puk" data-product-slide="product-<?php echo get_the_id(); ?>" >
+									<div class="animate-puk-mask">
+										<div class="animate-puk" data-effect="fade-up" data-delay="<?php echo $i ?>s">
+											<div class="p_products__slide-top">
+												<div class="p_products__slide-cover" style="background-color: <?php echo carbon_get_the_post_meta('crb_product_color') ?>;"></div>
+												<div class="p_products__slide-photo">
+													<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+												</div>
+											</div>
+											<div class="p_products__slide-title">
+												<?php the_title(); ?>	
+											</div>
 										</div>
-									</div>
-									<div class="p_products__slide-title">
-										<?php the_title(); ?>	
 									</div>
 								</div>
 							<?php endwhile; endif; ?>
@@ -174,12 +189,16 @@ Template Name: Главная страница
 		</div>
 	</div>
 	<div class="p_main__advantages">
-		<div class="p_main__advantages-title">
-			Наши преимущества
+		<div class="animate-puk-mask">
+			<div class="p_main__advantages-title animate-puk" data-effect="fade-up" data-delay="0.7s">
+				Наши преимущества
+			</div>
 		</div>
 		<div class="p_main__advantages-line"></div>
-		<div class="p_main__advantages-description">
-			Живий хлібний квас ТМ «Арсеніївський» - натуральний хлібний квас, отриманий в результаті природного бродіння, непастеризований, і, на відміну від інших, не насичений штучно вуглекислим газом. 
+		<div class="animate-puk-mask">
+			<div class="p_main__advantages-description animate-puk" data-effect="fade-up" data-delay="1.2s">
+				Живий хлібний квас ТМ «Арсеніївський» - натуральний хлібний квас, отриманий в результаті природного бродіння, непастеризований, і, на відміну від інших, не насичений штучно вуглекислим газом. 
+			</div>
 		</div>
 		<div class="container">
 			<div class="row">
@@ -202,11 +221,15 @@ Template Name: Главная страница
 								foreach ( $advantages as $advantage ): ?>
 									<?php $i++; $i=$i/2 ?>
 									<div class="swiper-slide">
-										<div class="p_main__advantages-photo">
-											<img src="<?php echo $advantage['crb_advantages_photo'] ?>">
-										</div>
-										<div class="p_main__advantages-text">
-											<?php echo $advantage['crb_advantages_text'] ?>
+										<div class="animate-puk-mask">
+											<div class="animate-puk" data-effect="fade-up" data-delay="<?php echo $i ?>s">
+												<div class="p_main__advantages-photo">
+													<img src="<?php echo $advantage['crb_advantages_photo'] ?>">
+												</div>
+												<div class="p_main__advantages-text">
+													<?php echo $advantage['crb_advantages_text'] ?>
+												</div>
+											</div>
 										</div>
 									</div>
 								<?php endforeach; ?>
@@ -221,17 +244,23 @@ Template Name: Главная страница
 		</div>
 	</div>
 	<div class="p_main__test">
-		<div class="p_main__test-title">
-			Хочешь подобрать напиток?
-		</div>
-		<div class="p_main__test-description">
-			Мы разработали улинакальный опросник лично для тебя!
-		</div>
-		<a href="<?php echo get_page_url('tpl_test') ?>">
-			<div class="p_main__test-button">
-				Пройти тест
+		<div class="animate-puk-mask">
+			<div class="p_main__test-title animate-puk" data-effect="fade-up" data-delay="0.8s">
+				Хочешь подобрать напиток?
 			</div>
-		</a>
+		</div>
+		<div class="animate-puk-mask">
+			<div class="p_main__test-description animate-puk" data-effect="fade-up" data-delay="1.2s">
+				Мы разработали улинакальный опросник лично для тебя!
+			</div>
+		</div>
+		<div class="animate-puk-mask">
+			<a href="<?php echo get_page_url('tpl_test') ?>">
+				<div class="p_main__test-button animate-puk" data-effect="fade-up" data-delay="1.5s">
+					Пройти тест
+				</div>
+			</a>
+		</div>
 	</div>
 </div>
 <?php endwhile; else: ?>
