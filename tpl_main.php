@@ -151,7 +151,7 @@ Template Name: Главная страница
 	</div>
 	<div class="p_main__questions">
 		<div class="p_main__questions-photo">
-			<img src="<?php bloginfo('template_url') ?>/img/kvass.jpg" alt="">
+			<img src="<?php bloginfo('template_url') ?>/img/questions.jpg" alt="">
 		</div>
 		<div class="p_main__questions-content">
 			<div class="container">
