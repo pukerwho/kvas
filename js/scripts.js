@@ -35,6 +35,21 @@ $('.p_test__submit').on('click', function(){
   testChecked.each(function(){
     balls = balls + parseInt($(this).val(), 10);
   });
+  if(balls <= 2) {
+    $('.testresult__modal-awesome').removeClass('testresult__modal-showblock');
+    $('.testresult__modal-good').removeClass('testresult__modal-showblock');
+    $('.testresult__modal-bad').addClass('testresult__modal-showblock');
+  }
+  if(balls === 3 ) {
+    $('.testresult__modal-awesome').removeClass('testresult__modal-showblock');
+    $('.testresult__modal-bad').removeClass('testresult__modal-showblock');
+    $('.testresult__modal-good').addClass('testresult__modal-showblock');
+  }
+  if(balls >= 4 ) {
+    $('.testresult__modal-good').removeClass('testresult__modal-showblock');
+    $('.testresult__modal-bad').removeClass('testresult__modal-showblock');
+    $('.testresult__modal-awesome').addClass('testresult__modal-showblock');
+  }
   console.log(balls);
 })
 

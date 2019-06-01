@@ -67,7 +67,26 @@
 	            	</div>
 	            	<div class="testresult__modal-item">
 	            		<div class="testresult__modal-text">
-	            			Когда мы были детьми в Советском Союзе, газировки у нас не было – воду на улицах вообще почти не продавали. Поэтому квас буквально спасал нам жизнь!Когда мы были детьми в Советском Союзе, газировки у нас не было – воду на улицах вообще почти не продавали.
+	            			<?php 
+					          $args_tests = [
+					              'post_type' => 'page',
+					              'fields' => 'ids',
+					              'nopaging' => true,
+					              'meta_key' => '_wp_page_template',
+					              'meta_value' => 'tpl_test.php'
+					          ];
+					          $pages_tests = get_posts( $args_tests );
+					          foreach ( $pages_tests as $pages_test ): ?>
+		            			<div class="testresult__modal-awesome">
+		            				<?php echo carbon_get_post_meta($pages_test, 'crb_test_answer_awesome') ?>
+		            			</div>
+		            			<div class="testresult__modal-good">
+		            				<?php echo carbon_get_post_meta($pages_test, 'crb_test_answer_good') ?>
+		            			</div>
+		            			<div class="testresult__modal-bad">
+		            				<?php echo carbon_get_post_meta($pages_test, 'crb_test_answer_bad') ?>
+		            			</div>
+		            		<?php endforeach; ?>
 	            		</div>
 	            		<div class="kvas-button">
 	            			Выбрать квас

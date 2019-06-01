@@ -9183,6 +9183,10 @@ a:hover {
       font-family: Oswald-Light;
       font-size: 19px;
       margin-bottom: 20px; }
+    .testresult__modal-awesome, .testresult__modal-bad, .testresult__modal-good {
+      display: none; }
+    .testresult__modal-showblock {
+      display: block; }
 
 .menu {
   display: -webkit-box;

@@ -39,6 +39,9 @@ function crb_page_theme_options() {
             Field::make( 'text', 'crb_test_answer_value', 'Баллов' ),
           ))
       ) ),
+      Field::make( 'textarea', 'crb_test_answer_awesome', 'Если идеально ответили' ),
+      Field::make( 'textarea', 'crb_test_answer_good', 'Если хорошо ответили' ),
+      Field::make( 'textarea', 'crb_test_answer_bad', 'Если плохо ответили' ),
     ) );
   Container::make( 'post_meta', 'More' )
     ->where( 'post_type', '=', 'page' )

@@ -27,27 +27,25 @@ Template Name: Страница ТЕСТ
 				foreach ( $tests as $test ): ?>
 					<?php $i++; ?>
 					<?php $y++; $y=$y/4 ?>
-					<div class="animate-puk-mask">
-						<div class="p_test__item animate-puk" data-effect="fade-up" data-delay="<?php echo $y ?>s">
-							<div class="p_test__question">
-								<div class="p_test__number">
-									<?php echo $i ?>.
+					<div class="p_test__item">
+						<div class="p_test__question">
+							<div class="p_test__number">
+								<?php echo $i ?>.
+							</div>
+							<span>
+								<?php echo $test['crb_test_question'] ?>		
+							</span>
+						</div>
+						<div class="p_test__answers">
+							<?php
+							$tests_answer = $test['crb_test_answer'];
+							foreach ( $tests_answer as $test_answer ): ?>
+								<?php $y++; ?>
+								<div class="p_test__answer">
+									<input type="radio" name="kvastest<?php echo $i ?>" id="kvastest<?php echo $i ?><?php echo $y ?>" value="<?php echo $test_answer['crb_test_answer_value'] ?>" class="kvastest">
+									<label for="kvastest<?php echo $i ?><?php echo $y ?>"><?php echo $test_answer['crb_test_answer_text'] ?></label>	
 								</div>
-								<span>
-									<?php echo $test['crb_test_question'] ?>		
-								</span>
-							</div>
-							<div class="p_test__answers">
-								<?php
-								$tests_answer = $test['crb_test_answer'];
-								foreach ( $tests_answer as $test_answer ): ?>
-									<?php $y++; ?>
-									<div class="p_test__answer">
-										<input type="radio" name="kvastest<?php echo $i ?>" id="kvastest<?php echo $i ?><?php echo $y ?>" value="<?php echo $test_answer['crb_test_answer_value'] ?>" class="kvastest">
-										<label for="kvastest<?php echo $i ?><?php echo $y ?>"><?php echo $test_answer['crb_test_answer_text'] ?></label>	
-									</div>
-								<?php endforeach; ?>
-							</div>
+							<?php endforeach; ?>
 						</div>
 					</div>
 				<?php endforeach; ?>
