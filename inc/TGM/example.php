@@ -81,6 +81,16 @@ function estate_register_required_plugins() {
 		),
 
 		array(
+			'name'               => 'Polylang', // The plugin name.
+			'slug'               => 'polylang', // The plugin slug (typically the folder name).
+			'source'             => get_template_directory() . '/lib/plugins/polylang.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+			
+		),
+
+		array(
 			'name'               => 'Wordpress Importer', // The plugin name.
 			'slug'               => 'wordpress-importer', // The plugin slug (typically the folder name).
 			'source'             => get_template_directory() . '/lib/plugins/wordpress-importer.zip', // The plugin source.

@@ -29,7 +29,12 @@ require_once get_template_directory() . '/inc/custom-fields/settings-meta.php';
 require_once get_template_directory() . '/inc/custom-fields/post-meta.php';
 require_once get_template_directory() . '/inc/custom-fields/pages-meta.php';
 require_once get_template_directory() . '/inc/TGM/example.php';
-
+function check_polylang_plugin() {
+    if(is_plugin_active('polylang/polylang.php')) {
+        require_once get_template_directory() . '/inc/lang/polylang.php'; 
+    }
+}
+add_action( 'admin_init', 'check_polylang_plugin' );
 
 register_nav_menus( array(
     'head_menu' => 'Меню в шапке',

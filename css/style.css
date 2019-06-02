@@ -9299,11 +9299,14 @@ a:hover {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
     -webkit-border-radius: 21px;
     border-radius: 21px;
     border: solid 1px transparent;
     margin-right: 30px;
     padding: 7px 10px; }
+    .menu li:hover > .sub-menu {
+      display: block; }
     .menu li:last-child {
       margin-right: 0; }
     .menu li a {
@@ -9312,6 +9315,19 @@ a:hover {
       font-size: 15px;
       letter-spacing: 0.8px;
       text-transform: uppercase; }
+  .menu .sub-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.14);
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    padding: 10px; }
+    .menu .sub-menu li {
+      margin-right: 0; }
 
 /* BUTTONS */
 .kvas-button {

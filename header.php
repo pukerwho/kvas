@@ -71,7 +71,7 @@
                 <a href="#">
                   <div class="contact-icon mr-0">
                     <div class="header__lang">
-                      RU
+                      УКР
                     </div>
                   </div>
                 </a>

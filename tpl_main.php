@@ -43,7 +43,11 @@ Template Name: Главная страница
 			<div class="row">
 				<div class="col-md-12">
 					<div class="p_brewery__title">
-						Квасоварня
+						<?php
+								if ( function_exists( 'pll_the_languages' ) ) {
+							 		pll_e('Квасоварня'); 
+							 	}
+							?>
 					</div>
 					<div class="p_brewery__line"></div>
 				</div>
