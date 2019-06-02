@@ -36,6 +36,7 @@ Template Name: Главная страница
 				</div>
 			<?php endforeach; ?>
 		</div>
+		<div class="main-hero-swiper-pagination"></div>
 	</div>
 	<div class="p_brewery">
 		<div class="container">

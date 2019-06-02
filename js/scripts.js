@@ -38,7 +38,7 @@ var swiperMainHeroFunc = function() {
         delay: 5000,
       },
       pagination: {
-        el: '.swiper-pagination',
+        el: '.main-hero-swiper-pagination',
       },
     })
   }
