@@ -75,6 +75,9 @@ function crb_page_theme_options() {
           Field::make( 'text', 'crb_contact_email', 'Email' ),
       ) ),
       Field::make( 'textarea', 'crb_contact_map', 'Карта (iframe)' ),
+      Field::make( 'text', 'crb_contact_mainemail', 'Главная почта' ),
+      Field::make( 'text', 'crb_contact_facebook', 'Ссылка на Facebook' ),
+      Field::make( 'text', 'crb_contact_instagram', 'Ссылка на Instagram' ),
     ) );
 }
 

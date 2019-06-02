@@ -18,30 +18,42 @@
 	              ]); ?>
 	            </div>
 	            <div class="footer__right">
-	              <div class="d-flex">
-	                <a href="#">
-	                  <div class="contact-icon">
-	                    <img src="<?php bloginfo('template_url') ?>/img/email.svg" alt="Email" class="contact-icon__email">
-	                  </div>
-	                </a>
-	                <a href="#">
-	                  <div class="contact-icon">
-	                    <img src="<?php bloginfo('template_url') ?>/img/facebook.svg" alt="Facebook" class="contact-icon__facebook">
-	                  </div>
-	                </a>
-	                <a href="#">
-	                  <div class="contact-icon">
-	                    <img src="<?php bloginfo('template_url') ?>/img/instagram.svg" alt="Instagram" class="contact-icon__instagram">
-	                  </div>
-	                </a>
-	                <a href="#">
-	                  <div class="contact-icon mr-0">
-	                    <div class="footer__lang">
-	                    	RU
+	            	<?php 
+			          $args_contact_page = [
+			              'post_type' => 'page',
+			              'fields' => 'ids',
+			              'nopaging' => true,
+			              'meta_key' => '_wp_page_template',
+			              'meta_value' => 'tpl_contact.php'
+			          ];
+			          $pages_contacts = get_posts( $args_contact_page );
+			          foreach ( $pages_contacts as $pages_contact ): ?>
+		              <div class="d-flex">
+		                <a href="<?php echo carbon_get_post_meta($pages_contact, 'crb_contact_mainemail'); ?>" target="_blank">
+		                  <div class="contact-icon">
+		                    <img src="<?php bloginfo('template_url') ?>/img/email.svg" alt="Email" class="contact-icon__email">
+		                  </div>
+		                </a>
+		                <a href="<?php echo carbon_get_post_meta($pages_contact, 'crb_contact_facebook'); ?>" target="_blank">
+		                  <div class="contact-icon">
+		                    <img src="<?php bloginfo('template_url') ?>/img/facebook.svg" alt="Facebook" class="contact-icon__facebook">
+		                  </div>
+		                </a>
+		                <a href="<?php echo carbon_get_post_meta($pages_contact, 'crb_contact_instagram'); ?>" target="_blank">
+		                  <div class="contact-icon">
+		                    <img src="<?php bloginfo('template_url') ?>/img/instagram.svg" alt="Instagram" class="contact-icon__instagram">
+		                  </div>
+		                </a>
+		                <div class="mr-0">
+	                    <div class="header__lang">
+	                      <?php 
+	                        if ( function_exists( 'pll_the_languages' ) ) {pll_the_languages( array() );
+	                        }
+	                      ?>
 	                    </div>
 	                  </div>
-	                </a>
-	              </div>
+		              </div>
+		            <?php endforeach; ?>
 	            </div>
 	          </div>
     			</div>

@@ -9342,6 +9342,7 @@ a:hover {
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-border-radius: 50%;
+  background-color: #ffffff;
   border-radius: 50%;
   border: solid 1px #a9a9a9;
   -webkit-box-ordinal-group: 3;
@@ -9354,6 +9355,11 @@ a:hover {
   transition: opacity 0.35s; }
   .lang-item:not(.current-lang) {
     margin-top: 10px; }
+  .lang-item:hover {
+    border: solid 1px #ea022d;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
 
 .current-lang {
   display: -webkit-box;
@@ -9512,10 +9518,15 @@ a:hover {
   padding: 20px 0; }
   .footer__logo img {
     height: 110px; }
+.footer__right {
+  margin-right: 35px; }
 .footer__lang {
   color: #989898;
   font-family: Oswald-Regular;
   font-size: 18px; }
+.footer .menu .sub-menu {
+  bottom: 35px;
+  top: auto; }
 
 @font-face {
   font-family: 'Oswald-ExtraLight';
