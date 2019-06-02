@@ -68,13 +68,14 @@
                     <img src="<?php bloginfo('template_url') ?>/img/instagram.svg" alt="Instagram" class="contact-icon__instagram">
                   </div>
                 </a>
-                <a href="#">
-                  <div class="contact-icon mr-0">
-                    <div class="header__lang">
-                      УКР
-                    </div>
+                <div class="mr-0">
+                  <div class="header__lang">
+                    <?php 
+                      if ( function_exists( 'pll_the_languages' ) ) {pll_the_languages( array() );
+                      }
+                    ?>
                   </div>
-                </a>
+                </div>
               </div>
             </div>
           </div>

@@ -9329,6 +9329,43 @@ a:hover {
     .menu .sub-menu li {
       margin-right: 0; }
 
+.lang-item {
+  width: 35px;
+  min-height: 35px;
+  display: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: solid 1px #a9a9a9;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s;
+  -o-transition: opacity 0.35s;
+  transition: opacity 0.35s; }
+  .lang-item:not(.current-lang) {
+    margin-top: 10px; }
+
+.current-lang {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  opacity: 1; }
+
 /* BUTTONS */
 .kvas-button {
   min-width: 190px;
@@ -9380,9 +9417,32 @@ a:hover {
     .header__logo img {
       height: 90px; }
   .header__lang {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
     color: #989898;
     font-family: Oswald-Regular;
-    font-size: 18px; }
+    font-size: 16px; }
+    .header__lang:hover .lang-item {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      opacity: 1;
+      -webkit-transition: opacity 0.35s;
+      -o-transition: opacity 0.35s;
+      transition: opacity 0.35s; }
+    .header__lang a {
+      color: #989898; }
+  .header__right {
+    margin-right: 35px; }
   .header__center {
     position: absolute;
     top: 0;
