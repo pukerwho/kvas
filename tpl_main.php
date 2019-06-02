@@ -8,6 +8,35 @@ Template Name: Главная страница
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="p_main">
+	<div class="main-hero-swiper swiper-container">
+		<div class="swiper-wrapper">
+			<?php 
+			$mainsliders = carbon_get_the_post_meta('crb_main_hero');
+			foreach( $mainsliders as $mainslider ): ?>
+				<div class="swiper-slide">
+					<div class="main-hero" style="background-image: url(<?php echo $mainslider['crb_main_hero_photo'] ?>) ;background-size: cover; -webkit-background-size: cover;">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-5 offset-md-7">
+									<div class="main-hero__title">
+										<?php echo $mainslider['crb_main_hero_title'] ?>
+									</div>
+									<div class="main-hero__description">
+										<?php echo $mainslider['crb_main_hero_description'] ?>
+									</div>
+									<a href="<?php echo $mainslider['crb_main_hero_link'] ?>">
+										<div class="kvas-button__white">
+											Узнать больше
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<?php endforeach; ?>
+		</div>
+	</div>
 	<div class="p_brewery">
 		<div class="container">
 			<div class="row">

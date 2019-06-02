@@ -37,9 +37,15 @@ Template Name: Страница РЕЦЕПТЫ
 								<?php the_title(); ?>
 							</a>
 						</div>
-						<div class="p_posts__first-info">
-							<div>
-								7 ингридиентов
+						<div class="p_posts__first-info p-relative">
+							<?php 
+								$post_id = get_the_id();
+								$sostavs = carbon_get_post_meta($post_id, 'crb_recipes_sostavs');
+								foreach ($sostavs as $sostav): ?>
+									<?php $ingredient++ ?>
+							<?php endforeach; ?>
+							<div class="d-flex pointer ingredients">
+								<?php echo $ingredient ?> Ингридиентов <span class="ingredients-toggle"><img src="<?php bloginfo('template_url') ?>/img/left.svg" alt=""></span>
 							</div>
 							<div class="d-flex">
 								<img src="<?php bloginfo('template_url') ?>/img/plate.svg" alt=""> <?php echo carbon_get_the_post_meta('crb_recipes_qty') ?>
@@ -47,6 +53,18 @@ Template Name: Страница РЕЦЕПТЫ
 							<div class="d-flex">
 								<img src="<?php bloginfo('template_url') ?>/img/time.svg" alt="">
 								<?php echo carbon_get_the_post_meta('crb_recipes_time') ?>
+							</div>
+							<div class="animate-puk-mask">
+								<div class="ingredients-open">
+									<?php 
+									$post_id = get_the_id();
+									$sostavs = carbon_get_post_meta($post_id, 'crb_recipes_sostavs');
+									foreach ($sostavs as $sostav): ?>
+										<div>
+											<?php echo $sostav['crb_recipes_sostav'] ?>	
+										</div>
+									<?php endforeach; ?>
+								</div>
 							</div>
 						</div>
 						<div class="p_posts__first-description">

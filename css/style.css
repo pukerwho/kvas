@@ -8963,6 +8963,9 @@ a:hover {
 .p-relative {
   position: relative; }
 
+.pointer {
+  cursor: pointer; }
+
 .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
@@ -9031,6 +9034,32 @@ a:hover {
     height: 17px; }
 
 /* HERO BLOCK */
+.main-hero {
+  height: 682px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px; }
+  .main-hero__title {
+    color: #ffffff;
+    font-family: Oswald-Bold;
+    font-size: 55px;
+    margin-bottom: 40px; }
+  .main-hero__description {
+    color: #ffffff;
+    font-family: Oswald-Regular;
+    font-size: 20px;
+    margin-bottom: 40px; }
+  .main-hero .kvas-button__white {
+    color: #bd0511; }
+
 .hero {
   height: 615px;
   position: relative;
@@ -9187,6 +9216,51 @@ a:hover {
       display: none; }
     .testresult__modal-showblock {
       display: block; }
+
+.ingredients-toggle {
+  margin-left: 5px; }
+  .ingredients-toggle-open img {
+    -webkit-transform: rotate(-180deg) !important;
+    -ms-transform: rotate(-180deg) !important;
+    transform: rotate(-180deg) !important;
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s; }
+  .ingredients-toggle img {
+    height: 8px !important;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+    margin-right: 0px !important; }
+
+.ingredients-open {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 4px 17px 0 rgba(184, 184, 184, 0.5);
+  box-shadow: 0 4px 17px 0 rgba(184, 184, 184, 0.5);
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+  padding: 15px; }
+  .ingredients-open > div {
+    margin-bottom: 10px; }
+    .ingredients-open > div:last-child {
+      margin-bottom: 0; }
+  .ingredients-open-toggle {
+    display: block;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s; }
 
 .menu {
   display: -webkit-box;

@@ -27,6 +27,25 @@ $('.p_faq__item').on('click', function(){
   $(this).toggleClass('p_faq__item-open');
 });
 
+//MAIN HERO
+var swiperMainHeroFunc = function() {
+  if ($(document).width() > 760) {
+    var swiperProducts = new Swiper('.main-hero-swiper', {
+      slidesPerView: 1,
+      loop: true,
+      effect: 'fade',
+      autoplay: {
+        delay: 5000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    })
+  }
+}
+
+swiperMainHeroFunc();
+
 //TEST PAGE
 $('.p_test__submit').on('click', function(){
   openTestModal();
@@ -136,3 +155,15 @@ if ($(document).width() > 760) {
     },
   })
 }
+
+//RECIPES PAGE 
+if ($('.p_posts__first-info').length > 0){
+  var heightPostInfo = $('.p_posts__first-info').height();
+  console.log(heightPostInfo);
+  $('.ingredients-open').css({'top':'calc(10px + ' + heightPostInfo + 'px)'});  
+}
+
+$('.ingredients').on('click', function(){
+  $('.ingredients-open').toggleClass('ingredients-open-toggle');
+  $('.ingredients-toggle').toggleClass('ingredients-toggle-open');
+})
