@@ -9249,6 +9249,9 @@ a:hover {
     .testresult__modal-showblock {
       display: block; }
 
+.ingredients {
+  white-space: nowrap; }
+
 .ingredients-toggle {
   margin-left: 5px; }
   .ingredients-toggle-open img {
@@ -11453,6 +11456,9 @@ button.swiper-pagination-bullet {
   /* Windows 8 IE 10 fix */
   -ms-perspective: 1200px; }
 
+@media (min-width: 992px) and (max-width: 1228px) {
+  .menu li a {
+    font-size: 13px; } }
 @media (max-width: 992px) {
   .pc-show {
     display: none !important; }
@@ -11629,6 +11635,8 @@ button.swiper-pagination-bullet {
     .mobile-lang .current-lang {
       display: none; }
 
+  .p_post__first-img {
+    margin-bottom: 30px; }
   .p_post__grid {
     -ms-grid-columns: 100% [1];
     grid-template-columns: repeat(1, 100%); }

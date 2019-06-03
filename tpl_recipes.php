@@ -48,7 +48,7 @@ Template Name: Страница РЕЦЕПТЫ
 								foreach ($sostavs as $sostav): ?>
 									<?php $ingredient++ ?>
 							<?php endforeach; ?>
-							<div class="d-flex pointer ingredients">
+							<div class="d-flex align-items-center pointer ingredients">
 								<?php echo $ingredient ?> Ингридиентов <span class="ingredients-toggle"><img src="<?php bloginfo('template_url') ?>/img/left.svg" alt=""></span>
 							</div>
 							<div class="d-flex">

@@ -14,7 +14,7 @@ Template Name: Главная страница
 			$mainsliders = carbon_get_the_post_meta('crb_main_hero');
 			foreach( $mainsliders as $mainslider ): ?>
 				<div class="swiper-slide">
-					<div class="main-hero" style="background-image: url(<?php echo $mainslider['crb_main_hero_photo'] ?>) ;background-size: cover; -webkit-background-size: cover;">
+					<div class="main-hero" style="background-image: url(<?php echo $mainslider['crb_main_hero_photo'] ?>) ;background-size: cover; -webkit-background-size: cover; background-position: 50%">
 						<div class="container">
 							<div class="row">
 								<div class="col-md-5 offset-md-7">
