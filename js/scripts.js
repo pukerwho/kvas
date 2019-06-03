@@ -94,6 +94,12 @@ if ($(document).width() > 992) {
   }
 }
 
+if ($(document).width() < 992) {
+  var headerTopHeight = $('.mobile-cover .header__top').height();
+  console.log(headerTopHeight);
+  $('.mobile-cover .header__menu').css({'margin-top':headerTopHeight});
+}
+
 //PRODUCTS 
 var swiperProductsFunc = function() {
   if ($(document).width() > 760) {
