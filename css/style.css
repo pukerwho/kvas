@@ -11590,6 +11590,8 @@ button.swiper-pagination-bullet {
       .mobile-cover .menu li {
         padding: 7px 0;
         margin-right: 0; }
+      .mobile-cover .menu .sub-menu {
+        z-index: 9; }
 
   .mobile-lang {
     display: -webkit-box;
