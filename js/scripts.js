@@ -191,7 +191,7 @@ if ($(document).width() > 760) {
   })
 }
 
-if ($(document).width() > 760) {
+if ($(document).width() < 760) {
   var swiperAdvantages = new Swiper('.p_main__advantages-slider', {
     slidesPerView: 1,
     loop: true,
