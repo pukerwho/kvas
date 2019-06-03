@@ -107,6 +107,19 @@ var swiperProductsFunc = function() {
       },
     })
   }
+  if ($(document).width() < 760) {
+    var swiperProducts = new Swiper('.swiper-products', {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-products-button-next',
+        prevEl: '.swiper-products-button-prev',
+      },
+    })
+  }
 }
 
 swiperProductsFunc();
@@ -142,10 +155,37 @@ if ($(document).width() > 760) {
   })
 }
 
+if ($(document).width() < 760) {
+  var swiperPosts = new Swiper('.p_posts__slider', {
+    slidesPerView: 2,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-posts-button-next',
+      prevEl: '.swiper-posts-button-prev',
+    },
+  })
+}
+
 //Advantages
 if ($(document).width() > 760) {
   var swiperAdvantages = new Swiper('.p_main__advantages-slider', {
     slidesPerView: 3,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  })
+}
+
+if ($(document).width() > 760) {
+  var swiperAdvantages = new Swiper('.p_main__advantages-slider', {
+    slidesPerView: 1,
     loop: true,
     autoplay: {
       delay: 5000,
