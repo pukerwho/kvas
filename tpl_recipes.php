@@ -49,7 +49,7 @@ Template Name: Страница РЕЦЕПТЫ
 									<?php $ingredient++ ?>
 							<?php endforeach; ?>
 							<div class="d-flex align-items-center pointer ingredients">
-								<?php echo $ingredient ?> Ингридиентов <span class="ingredients-toggle"><img src="<?php bloginfo('template_url') ?>/img/left.svg" alt=""></span>
+								<?php echo $ingredient ?> <?php if ( function_exists( 'pll_the_languages' ) ) { pll_e('Інгредієнтів'); } ?> <span class="ingredients-toggle"><img src="<?php bloginfo('template_url') ?>/img/left.svg" alt=""></span>
 							</div>
 							<div class="d-flex">
 								<img src="<?php bloginfo('template_url') ?>/img/plate.svg" alt=""> <?php echo carbon_get_the_post_meta('crb_recipes_qty') ?>
