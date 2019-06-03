@@ -17,6 +17,7 @@ pll_register_string( 'test_button_text', 'Дізнатися результат'
 pll_register_string( 'test_button_text_choose', 'Вибрати квас' );
 pll_register_string( 'promo_title', 'Акції' );
 pll_register_string( 'promo_back', 'до всіх акцій' );
+pll_register_string( 'recipes_ingredients', 'Інгредієнтів' );
 pll_register_string( 'recipes_title', 'Рецепти' );
 pll_register_string( 'recipes_back', 'до всіх рецептів' );
 pll_register_string( 'recipes_sklad', 'Склад' );

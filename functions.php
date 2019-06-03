@@ -38,6 +38,7 @@ add_action( 'admin_init', 'check_polylang_plugin' );
 
 register_nav_menus( array(
     'head_menu' => 'Меню в шапке',
+    'footer_menu' => 'Меню в подвале',
 ) );
 
 // Register sidebars
