@@ -63,7 +63,7 @@
               $pages_contacts = get_posts( $args_contact_page );
               foreach ( $pages_contacts as $pages_contact ): ?>
                 <div class="d-flex">
-                  <a href="<?php echo carbon_get_post_meta($pages_contact, 'crb_contact_mainemail'); ?>" target="_blank">
+                  <a href="mailto:<?php echo carbon_get_post_meta($pages_contact, 'crb_contact_mainemail'); ?>" target="_blank">
                     <div class="contact-icon">
                       <img src="<?php bloginfo('template_url') ?>/img/email.svg" alt="Email" class="contact-icon__email">
                     </div>

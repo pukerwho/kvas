@@ -1,10 +1,10 @@
 <?php
 
-pll_register_string( 'more', 'Подробнее' );
-pll_register_string( 'licences', 'Лицензии' );
-pll_register_string( 'certificate', 'Сертификаты' );
-pll_register_string( 'company_has', 'Компания располагает' );
-pll_register_string( 'company_standarts', 'Стандарты' );
+pll_register_string( 'our_products', 'Наші продукти' );
+pll_register_string( 'drinks', 'Напої' );
+pll_register_string( 'you_heard', 'Ти вже чув про новий напій від Арсеніївського?' );
+pll_register_string( 'contact_center_office', 'Центральний офіс' );
+pll_register_string( 'contact_dev', 'Виробництво' );
 pll_register_string( 'contact_address', 'Адрес' );
 pll_register_string( 'contact_phones', 'Телефоны' );
 pll_register_string( 'contact_info', 'Контактная информация' );

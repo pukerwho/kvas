@@ -8966,6 +8966,9 @@ a:hover {
 .pointer {
   cursor: pointer; }
 
+#content {
+  margin-top: 110px; }
+
 .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
@@ -9401,10 +9404,20 @@ a:hover {
     padding: 12px 17px; }
 
 .header {
-  position: relative;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #ffffff;
   -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.14);
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.14);
   z-index: 9; }
+  .header__fixed {
+    position: fixed;
+    -webkit-transform: translateY(-110%);
+    -ms-transform: translateY(-110%);
+    transform: translateY(-110%);
+    -webkit-animation: headerfixed 0.4s forwards;
+    animation: headerfixed 0.4s forwards; }
   .header__content {
     display: -webkit-box;
     display: -webkit-flex;
@@ -9499,6 +9512,20 @@ a:hover {
     border-radius: 21px;
     border: solid 1px #c40b15; }
 
+@-webkit-keyframes headerfixed {
+  from {
+    -webkit-transform: translateY(-110%);
+    transform: translateY(-110%); }
+  to {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); } }
+@keyframes headerfixed {
+  from {
+    -webkit-transform: translateY(-110%);
+    transform: translateY(-110%); }
+  to {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); } }
 .footer__content {
   display: -webkit-box;
   display: -webkit-flex;

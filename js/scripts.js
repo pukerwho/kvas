@@ -7,7 +7,7 @@ $('.toogle-menu').on('click', function(e) {
 
 $(window).scroll(function(){
   var h_scroll = $(this).scrollTop();
-  if (h_scroll > 56) {
+  if (h_scroll > 110) {
     $('header').addClass('header__fixed')
   } else {
     $('header').removeClass('header__fixed')
