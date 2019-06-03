@@ -11451,4 +11451,221 @@ button.swiper-pagination-bullet {
   /* Windows 8 IE 10 fix */
   -ms-perspective: 1200px; }
 
+@media (max-width: 992px) {
+  .pc-show {
+    display: none !important; }
+
+  .mobile-show {
+    display: block !important; }
+
+  .header__center {
+    display: none; }
+  .header__right {
+    display: none; }
+
+  .mobile-menu {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 3; }
+    .mobile-menu span {
+      width: 40px;
+      height: 2px;
+      display: inline-block;
+      background-color: #bd0511;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s;
+      z-index: 2; }
+      .mobile-menu span:nth-of-type(2) {
+        margin-top: 0.5rem; }
+      .mobile-menu span:nth-of-type(3) {
+        width: 20px;
+        margin-top: 0.5rem; }
+    .mobile-menu__active span:first-of-type {
+      background-color: #bd0511;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s;
+      -webkit-transition-delay: 0.25;
+      -o-transition-delay: 0.25;
+      transition-delay: 0.25; }
+    .mobile-menu__active span:nth-of-type(2) {
+      background-color: #bd0511;
+      -webkit-transform: rotateZ(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotateZ(45deg);
+      margin-top: -0.1rem;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s;
+      -webkit-transition-delay: 0.25;
+      -o-transition-delay: 0.25;
+      transition-delay: 0.25; }
+    .mobile-menu__active span:nth-of-type(3) {
+      -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: left bottom;
+      -ms-transform-origin: left bottom;
+      transform-origin: left bottom;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s; }
+
+  .mobile-cover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 2rem;
+    background: #ffffff;
+    -webkit-transform: translateY(-150%);
+    -ms-transform: translateY(-150%);
+    transform: translateY(-150%);
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+    z-index: 1;
+    padding-top: 110px; }
+    .mobile-cover a {
+      position: relative;
+      color: #223966;
+      font-size: 16px;
+      font-weight: 800;
+      text-transform: uppercase; }
+    .mobile-cover li:last-child {
+      margin-bottom: 0; }
+    .mobile-cover__open {
+      -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      transform: translateY(0%);
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s;
+      z-index: 8; }
+    .mobile-cover-line {
+      width: 78px;
+      height: 1px;
+      background-color: #979797;
+      margin-bottom: 25px; }
+    .mobile-cover .menu {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-bottom: 30px; }
+      .mobile-cover .menu li {
+        margin-right: 0; }
+
+  .mobile-lang {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Oswald-Regular;
+    font-size: 16px; }
+    .mobile-lang li {
+      line-height: 1;
+      margin-right: 30px; }
+      .mobile-lang li:last-child {
+        margin-right: 0px; }
+    .mobile-lang a {
+      color: #989898; }
+
+  .p_brewery__grid {
+    -ms-grid-columns: 100% [1];
+    grid-template-columns: repeat(1, 100%); }
+  .p_brewery__img {
+    height: 350px; }
+  .p_main__brand-photo {
+    display: none; }
+  .p_main__questions-photo {
+    display: none; }
+  .p_main__questions-content {
+    height: 100%;
+    padding: 30px 0; }
+
+  .b_products__col {
+    margin-bottom: 30px; }
+    .b_products__col:last-child {
+      margin-bottom: 0; }
+  .b_products__item {
+    height: 345px; }
+
+  .hero {
+    height: -webkit-calc(100vh - 110px);
+    height: calc(100vh - 110px);
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-position: 65%; }
+    .hero-content {
+      left: 15px;
+      padding-top: 0; }
+    .hero-title {
+      font-size: 40px;
+      margin-bottom: 40px; }
+    .hero-text {
+      width: 100%; }
+    .hero-bottom {
+      left: -webkit-calc(50% - 15px);
+      left: calc(50% - 15px); }
+
+  .footer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .footer__logo {
+    width: 100%;
+    text-align: center; }
+  .footer__center {
+    width: 100%; }
+  .footer__menu .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 15px; }
+  .footer__menu li {
+    margin-right: 0; } }
+
 /*# sourceMappingURL=style.css.map */

@@ -89,9 +89,34 @@
                 </div>
               <?php endforeach; ?>
             </div>
+            <div class="mobile-show">
+              <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </header>
+  <div class="mobile-show">
+    <div class="mobile-cover">
+      <?php wp_nav_menu([
+        'theme_location' => 'head_menu',
+        'container' => 'nav',
+        'container_class' => 'header__menu',
+        'menu_id' => 'head_menu',
+      ]); ?>
+      <div class="mobile-cover-line"></div>
+      <div class="mobile-lang">
+        <?php 
+          if ( function_exists( 'pll_the_languages' ) ) {
+            pll_the_languages();
+          }
+        ?>  
+      </div>
+    </div>
+  </div>
   <section id="content" role="main">
