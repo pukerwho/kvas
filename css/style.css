@@ -8970,7 +8970,7 @@ a:hover {
   margin-top: 110px; }
 
 .swiper-pagination {
-  z-index: 8 !important; }
+  z-index: 7 !important; }
   .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
@@ -11576,7 +11576,7 @@ button.swiper-pagination-bullet {
       transition: all 0.4s;
       z-index: 8; }
     .mobile-cover-line {
-      width: 78px;
+      width: 50%;
       height: 1px;
       background-color: #979797;
       margin-bottom: 25px; }
@@ -11588,6 +11588,7 @@ button.swiper-pagination-bullet {
       flex-direction: column;
       margin-bottom: 30px; }
       .mobile-cover .menu li {
+        padding: 7px 0;
         margin-right: 0; }
 
   .mobile-lang {
@@ -11604,12 +11605,28 @@ button.swiper-pagination-bullet {
         margin-right: 0px; }
     .mobile-lang a {
       color: #989898; }
+    .mobile-lang .lang-item {
+      width: 45px;
+      min-height: 45px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      opacity: 1; }
+    .mobile-lang .current-lang {
+      display: none; }
 
   .p_brewery__grid {
     -ms-grid-columns: 100% [1];
     grid-template-columns: repeat(1, 100%); }
   .p_brewery__img {
     height: 350px; }
+  .p_main__brand-content {
+    height: 350px; }
+  .p_main__brand-title {
+    margin-bottom: 30px; }
+  .p_main__brand-description {
+    margin-bottom: 30px; }
   .p_main__brand-photo {
     display: none; }
   .p_main__questions-photo {
@@ -11617,6 +11634,10 @@ button.swiper-pagination-bullet {
   .p_main__questions-content {
     height: 100%;
     padding: 30px 0; }
+  .p_main__advantages-description {
+    width: 100%;
+    padding: 0 30px;
+    margin-bottom: 60px; }
   .p_products__modal-grid {
     -ms-grid-columns: 1fr [2];
     grid-template-columns: repeat(2, 1fr); }
@@ -11686,6 +11707,7 @@ button.swiper-pagination-bullet {
     margin-left: 15px; }
 
   .testresult__modal-box {
+    width: 100%;
     padding: 30px; }
   .testresult__modal-grid {
     -ms-grid-columns: 100% [1];
