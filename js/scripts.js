@@ -85,11 +85,13 @@ $('.testresult__modal-close').on('click', function(){
 })
 
 //CONTACT PAGE
-if ($('.p_contact__subtitle').length > 1) {
-  var contactSubtitleHeight = $('.p_contact__subtitle').height();
-  $('.p_contact__subtitle').each(function(){
-    $(this).css({'min-height':contactSubtitleHeight});
-  })  
+if ($(document).width() > 992) {
+  if ($('.p_contact__subtitle').length > 1) {
+    var contactSubtitleHeight = $('.p_contact__subtitle').height();
+    $('.p_contact__subtitle').each(function(){
+      $(this).css({'min-height':contactSubtitleHeight});
+    })  
+  }
 }
 
 //PRODUCTS 
