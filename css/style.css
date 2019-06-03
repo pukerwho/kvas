@@ -11460,6 +11460,17 @@ button.swiper-pagination-bullet {
   .mobile-show {
     display: block !important; }
 
+  .header__top {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% [2];
+    grid-template-columns: repeat(2, 50%);
+    position: absolute;
+    left: 0;
+    top: 110px; }
+    .header__top-item {
+      min-width: auto; }
   .header__center {
     display: none; }
   .header__right {
@@ -11561,7 +11572,7 @@ button.swiper-pagination-bullet {
     padding-top: 110px; }
     .mobile-cover a {
       position: relative;
-      color: #223966;
+      color: #023753;
       font-size: 16px;
       font-weight: 800;
       text-transform: uppercase; }

@@ -103,6 +103,20 @@
   </header>
   <div class="mobile-show">
     <div class="mobile-cover">
+      <div>
+        <div class="header__top">
+          <a href="#">
+            <div class="header__top-item">
+              <img src="<?php bloginfo('template_url') ?>/img/kvas-icon.svg" alt=""> Квас Арсеньевский
+            </div>
+          </a>
+          <a href="#">
+            <div class="header__top-item">
+              <img src="<?php bloginfo('template_url') ?>/img/water.svg" alt=""> Напиток Арсеньевский
+            </div>
+          </a>
+        </div>
+      </div>
       <?php wp_nav_menu([
         'theme_location' => 'head_menu',
         'container' => 'nav',
