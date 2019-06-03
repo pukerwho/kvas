@@ -13,7 +13,11 @@ Template Name: Страница РЕЦЕПТЫ
 		<div class="row">
 			<div class="col-md-12">
 				<div class="p_posts__title">
-					Рецепты
+					<?php
+						if ( function_exists( 'pll_the_languages' ) ) {
+					 		pll_e('Рецепти'); 
+					 	}
+					?>
 				</div>
 				<div class="p_posts__line"></div>
 			</div>
@@ -72,7 +76,11 @@ Template Name: Страница РЕЦЕПТЫ
 						</div>
 						<div class="p_posts__first-more">
 							<a href="<?php echo get_the_permalink(); ?>">
-								Подробнее
+								<?php
+									if ( function_exists( 'pll_the_languages' ) ) {
+								 		pll_e('Детальніше'); 
+								 	}
+								?>
 							</a>
 						</div>
 					</div>

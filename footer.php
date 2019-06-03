@@ -70,7 +70,11 @@
 	              <img src="<?php bloginfo('template_url') ?>/img/close.svg" alt="" width="8px">
 	            </div>
 	            <div class="testresult__modal-title">
-	            	Результаты
+	            	<?php
+									if ( function_exists( 'pll_the_languages' ) ) {
+								 		pll_e('Результати'); 
+								 	}
+								?>
 	            </div>
 	            <div class="testresult__modal-line"></div>
 	            <div class="testresult__modal-grid">
@@ -101,7 +105,11 @@
 		            		<?php endforeach; ?>
 	            		</div>
 	            		<div class="kvas-button">
-	            			Выбрать квас
+	            			<?php
+											if ( function_exists( 'pll_the_languages' ) ) {
+										 		pll_e('Вибрати квас'); 
+										 	}
+										?>
 	            		</div>
 	            	</div>
 	            </div>

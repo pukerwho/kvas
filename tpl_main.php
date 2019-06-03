@@ -26,7 +26,11 @@ Template Name: Главная страница
 									</div>
 									<a href="<?php echo $mainslider['crb_main_hero_link'] ?>">
 										<div class="kvas-button__white">
-											Узнать больше
+											<?php
+												if ( function_exists( 'pll_the_languages' ) ) {
+											 		pll_e('Дізнатися більше'); 
+											 	}
+											?>
 										</div>
 									</a>
 								</div>
@@ -44,10 +48,10 @@ Template Name: Главная страница
 				<div class="col-md-12">
 					<div class="p_brewery__title">
 						<?php
-								if ( function_exists( 'pll_the_languages' ) ) {
-							 		pll_e('Квасоварня'); 
-							 	}
-							?>
+							if ( function_exists( 'pll_the_languages' ) ) {
+						 		pll_e('Квасоварня'); 
+						 	}
+						?>
 					</div>
 					<div class="p_brewery__line"></div>
 				</div>
@@ -98,7 +102,11 @@ Template Name: Главная страница
 													<?php echo $brew['crb_brewery_text'] ?>
 												</div>
 												<div class="kvas-button">
-													Узнать подробности
+													<?php
+														if ( function_exists( 'pll_the_languages' ) ) {
+													 		pll_e('Дізнатися подробиці'); 
+													 	}
+													?>
 												</div>
 											</div>
 										</div>
@@ -118,18 +126,30 @@ Template Name: Главная страница
 					<div class="col-md-12">
 						<div class="animate-puk-mask">
 							<div class="p_main__brand-title animate-puk" data-effect="fade-up" data-delay="0.8s">
-								Бренд Арсеньевский
+								<?php
+									if ( function_exists( 'pll_the_languages' ) ) {
+								 		pll_e('Бренд Арсеніївський'); 
+								 	}
+								?>
 							</div>
 						</div>
 						<div class="animate-puk-mask">
 							<div class="p_main__brand-description animate-puk" data-effect="fade-up" data-delay="1.2s">
-								We Use Best Quality Products for Our Kvass
+								<?php
+									if ( function_exists( 'pll_the_languages' ) ) {
+								 		pll_e('Ми використовуємо найкращу якісну продукцію для нашого квасу'); 
+								 	}
+								?>
 							</div>
 						</div>
 						<div class="animate-puk-mask">
 							<a href="<?php echo get_page_url('tpl_brand') ?>">
 								<div class="kvas-button animate-puk" data-effect="fade-up" data-delay="1.5s">
-									Узнать больше
+									<?php
+										if ( function_exists( 'pll_the_languages' ) ) {
+									 		pll_e('Дізнатися більше'); 
+									 	}
+									?>
 								</div>
 							</a>
 						</div>
@@ -147,13 +167,21 @@ Template Name: Главная страница
 				<div class="col-md-12">
 					<div class="animate-puk-mask">
 						<div class="p_main__products-title animate-puk" data-effect="fade-up" data-delay="0.8s">
-							Наша продукция
+							<?php
+								if ( function_exists( 'pll_the_languages' ) ) {
+							 		pll_e('Наша продукція'); 
+							 	}
+							?>
 						</div>
 					</div>
 					<div class="p_main__products-line"></div>
 					<div class="animate-puk-mask">
 						<div class="p_main__products-description animate-puk" data-effect="fade-up" data-delay="1.2s">
-							We Are Really Good
+							<?php
+								if ( function_exists( 'pll_the_languages' ) ) {
+							 		pll_e('Ми дійсно хороші'); 
+							 	}
+							?>
 						</div>
 					</div>
 				</div>
@@ -190,7 +218,11 @@ Template Name: Главная страница
 					<a href="<?php echo get_page_url('tpl_products') ?>">
 						<div class="d-flex justify-content-center">
 							<div class="kvas-button">
-								Все продукты
+								<?php
+									if ( function_exists( 'pll_the_languages' ) ) {
+								 		pll_e('Всі продукти'); 
+								 	}
+								?>
 							</div>
 						</div>
 					</a>
@@ -208,14 +240,27 @@ Template Name: Главная страница
 				<div class="row">
 					<div class="col-md-5 offset-md-7">
 						<div class="p_main__questions-title">
-							Остались вопросы?
+							<?php
+								if ( function_exists( 'pll_the_languages' ) ) {
+							 		pll_e('Залишилися питання?'); 
+							 	}
+							?>
 						</div>
 						<div class="p_main__questions-line"></div>
 						<div class="p_main__questions-description">
+							<?php
+								if ( function_exists( 'pll_the_languages' ) ) {
+							 		pll_e('Залишилися питання?'); 
+							 	}
+							?>
 							In the fields of economics, marketing and advertising, a consumer is generally defined as the one who pays to consume the goods and services produced by a seller (i.e., company, organization). A consumer can be a person (or group of people), generally categorized as an end user or target demographic for a product, good, or service. A consumer can be a person (or group of people), generally categorized as an end user or target demographic for a product, good, or service.
 						</div>
 						<div class="kvas-button__white">
-							Узнать больше
+							<?php
+								if ( function_exists( 'pll_the_languages' ) ) {
+							 		pll_e('Дізнатися більше'); 
+							 	}
+							?>
 						</div>
 					</div>
 				</div>
@@ -225,7 +270,11 @@ Template Name: Главная страница
 	<div class="p_main__advantages">
 		<div class="animate-puk-mask">
 			<div class="p_main__advantages-title animate-puk" data-effect="fade-up" data-delay="0.7s">
-				Наши преимущества
+				<?php
+					if ( function_exists( 'pll_the_languages' ) ) {
+				 		pll_e('Наші переваги'); 
+				 	}
+				?>
 			</div>
 		</div>
 		<div class="p_main__advantages-line"></div>
@@ -280,18 +329,30 @@ Template Name: Главная страница
 	<div class="p_main__test">
 		<div class="animate-puk-mask">
 			<div class="p_main__test-title animate-puk" data-effect="fade-up" data-delay="0.8s">
-				Хочешь подобрать напиток?
+				<?php
+					if ( function_exists( 'pll_the_languages' ) ) {
+				 		pll_e('Хочеш підібрати напій?'); 
+				 	}
+				?>
 			</div>
 		</div>
 		<div class="animate-puk-mask">
 			<div class="p_main__test-description animate-puk" data-effect="fade-up" data-delay="1.2s">
-				Мы разработали улинакальный опросник лично для тебя!
+				<?php
+					if ( function_exists( 'pll_the_languages' ) ) {
+				 		pll_e('Ми розробили улінакальний опитувальник особисто для тебе!'); 
+				 	}
+				?>
 			</div>
 		</div>
 		<div class="animate-puk-mask">
 			<a href="<?php echo get_page_url('tpl_test') ?>">
 				<div class="p_main__test-button animate-puk" data-effect="fade-up" data-delay="1.5s">
-					Пройти тест
+					<?php
+						if ( function_exists( 'pll_the_languages' ) ) {
+					 		pll_e('Пройти тест'); 
+					 	}
+					?>
 				</div>
 			</a>
 		</div>

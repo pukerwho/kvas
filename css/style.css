@@ -9303,6 +9303,7 @@ a:hover {
     display: -ms-flexbox;
     display: flex;
     position: relative;
+    white-space: nowrap;
     -webkit-border-radius: 21px;
     border-radius: 21px;
     border: solid 1px transparent;

@@ -10,10 +10,18 @@ Template Name: Страница БРЕНД
 	<div class="hero">
 		<div class="hero-content">
 			<div class="hero-subtitle">
-				Бренд
+				<?php
+					if ( function_exists( 'pll_the_languages' ) ) {
+				 		pll_e('Бренд'); 
+				 	}
+				?>
 			</div>
 			<div class="hero-title">
-				«АРСЕНІЇВСЬКИЙ»
+				<?php
+					if ( function_exists( 'pll_the_languages' ) ) {
+				 		pll_e('«АРСЕНІЇВСЬКИЙ»'); 
+				 	}
+				?>
 			</div>
 			<div class="hero-text">
 				Під ТМ «Арсеніївський» випускається квас бутильований, розливний, а також напої соковмісні.
@@ -21,7 +29,11 @@ Template Name: Страница БРЕНД
 		</div>
 		<div class="hero-bottom">
 			<div class="hero-bottom__text">
-				Вниз	
+				<?php
+					if ( function_exists( 'pll_the_languages' ) ) {
+				 		pll_e('Вниз'); 
+				 	}
+				?>
 			</div>
 		</div>
 	</div>
@@ -46,7 +58,11 @@ Template Name: Страница БРЕНД
 			<div class="row">
 				<div class="col-md-12">
 					<div class="p_brand__title">
-						Наши продукты
+						<?php
+							if ( function_exists( 'pll_the_languages' ) ) {
+						 		pll_e('Наші продукти'); 
+						 	}
+						?>
 					</div>
 				</div>
 			</div>

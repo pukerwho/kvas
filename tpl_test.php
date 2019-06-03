@@ -16,7 +16,11 @@ Template Name: Страница ТЕСТ
 		<div class="row justify-content-center">
 			<div class="col-md-6">
 				<div class="p_test__title">
-					Узнай какой ты любитель кваса?
+					<?php
+						if ( function_exists( 'pll_the_languages' ) ) {
+					 		pll_e('Дізнайся який ти любитель квасу?'); 
+					 	}
+					?>
 				</div>
 			</div>
 		</div>
@@ -54,7 +58,11 @@ Template Name: Страница ТЕСТ
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<div class="kvas-button p_test__submit">
-					Узнать результат
+					<?php
+						if ( function_exists( 'pll_the_languages' ) ) {
+					 		pll_e('Дізнатися результат'); 
+					 	}
+					?>
 				</div>
 			</div>
 		</div>

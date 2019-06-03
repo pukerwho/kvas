@@ -73,19 +73,35 @@ Template Name: Страница ПРОДУКТЫ
 											<div class="p_products__modal-item">
 												<div class="p_products__modal-text">
 													<img src="<?php bloginfo('template_url') ?>/img/product-icon2.png" alt="">
-													Объем
+													<?php
+														if ( function_exists( 'pll_the_languages' ) ) {
+													 		pll_e('Обсяг'); 
+													 	}
+													?>
 												</div>
 												<div class="p_products__modal-text">
 													<img src="<?php bloginfo('template_url') ?>/img/product-icon3.png" alt="">
-													Количество в коробке:
+													<?php
+														if ( function_exists( 'pll_the_languages' ) ) {
+													 		pll_e('Кількість в коробці'); 
+													 	}
+													?>:
 												</div>
 												<div class="p_products__modal-text">
 													<img src="<?php bloginfo('template_url') ?>/img/product-icon4.png" alt="">
-													Упаковка
+													<?php
+														if ( function_exists( 'pll_the_languages' ) ) {
+													 		pll_e('Упаковка'); 
+													 	}
+													?>
 												</div>
 												<div class="p_products__modal-text">
 													<img src="<?php bloginfo('template_url') ?>/img/product-icon5.png" alt="">
-													Хранение
+													<?php
+														if ( function_exists( 'pll_the_languages' ) ) {
+													 		pll_e('Зберігання'); 
+													 	}
+													?>
 												</div>
 											</div>
 											<div class="p_products__modal-item">
@@ -105,11 +121,14 @@ Template Name: Страница ПРОДУКТЫ
 										</div>
 									</div>
 								</div>
-								
 								<div class="row">
 									<div class="col-md-12">
 										<div class="p_products__modal-title">
-											Похожие товары
+											<?php
+												if ( function_exists( 'pll_the_languages' ) ) {
+											 		pll_e('Схожі товари'); 
+											 	}
+											?>
 										</div>
 										<div class="p_products__modal-line"></div>
 									</div>

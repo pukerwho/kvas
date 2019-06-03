@@ -12,7 +12,13 @@
 				<div class="p_post__meta">
 					<a href="<?php echo get_page_url('tpl_news') ?>">
 						<div class="p_post__meta-back">
-							<img src="<?php bloginfo('template_url') ?>/img/arrow-left.svg" alt=""> Назад <span>ко всем новостям</span>
+							<img src="<?php bloginfo('template_url') ?>/img/arrow-left.svg" alt=""> <?php if ( function_exists( 'pll_the_languages' ) ) { pll_e('Назад'); } ?> <span>
+								<?php
+									if ( function_exists( 'pll_the_languages' ) ) {
+								 		pll_e('до всіх новин'); 
+								 	}
+								?>
+							</span>
 						</div>
 					</a>
 					<div class="p_post__meta-date">

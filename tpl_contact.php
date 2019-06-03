@@ -13,7 +13,11 @@ Template Name: Страница КОНТАКТЫ
 		<div class="row">
 			<div class="col-md-12">
 				<div class="p_contact__title">
-					Контакты
+					<?php
+						if ( function_exists( 'pll_the_languages' ) ) {
+					 		pll_e('Контакти'); 
+					 	}
+					?>
 				</div>
 				<div class="p_contact__line"></div>
 			</div>
@@ -23,7 +27,11 @@ Template Name: Страница КОНТАКТЫ
 				<div class="p_contact__grid">
 					<div class="p_contact__item">
 						<div class="p_contact__subtitle">
-							Центральный офис:
+							<?php
+								if ( function_exists( 'pll_the_languages' ) ) {
+							 		pll_e('Центральний офіс'); 
+							 	}
+							?>
 						</div>
 						<div class="p_contact__content">
 							<?php echo carbon_get_the_post_meta( 'crb_contact_office' ); ?>
@@ -31,7 +39,11 @@ Template Name: Страница КОНТАКТЫ
 					</div>
 					<div class="p_contact__item">
 						<div class="p_contact__subtitle">
-							Производство:
+							<?php
+								if ( function_exists( 'pll_the_languages' ) ) {
+							 		pll_e('Виробництво'); 
+							 	}
+							?>:
 						</div>
 						<div class="p_contact__content">
 							<?php echo carbon_get_the_post_meta( 'crb_contact_production' ); ?>

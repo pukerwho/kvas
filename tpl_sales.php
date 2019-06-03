@@ -13,7 +13,11 @@ Template Name: Страница АКЦИИ
 		<div class="row">
 			<div class="col-md-12">
 				<div class="p_posts__title">
-					Акции
+					<?php
+						if ( function_exists( 'pll_the_languages' ) ) {
+					 		pll_e('Акції'); 
+					 	}
+					?>
 				</div>
 				<div class="p_posts__line"></div>
 			</div>
@@ -72,7 +76,6 @@ Template Name: Страница АКЦИИ
 				  		</a>
 						<?php endwhile; endif; ?>
 					</div>
-
 				</div>
 				<div class="swiper-button-next swiper-posts-button-next"></div>
 				<div class="swiper-button-prev swiper-posts-button-prev"></div>

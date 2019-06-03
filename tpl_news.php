@@ -13,7 +13,11 @@ Template Name: Страница НОВОСТИ
 		<div class="row">
 			<div class="col-md-12">
 				<div class="p_posts__title">
-					Новости
+					<?php
+						if ( function_exists( 'pll_the_languages' ) ) {
+					 		pll_e('Новини'); 
+					 	}
+					?>
 				</div>
 				<div class="p_posts__line"></div>
 			</div>

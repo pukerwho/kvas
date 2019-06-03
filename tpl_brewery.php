@@ -13,7 +13,11 @@ Template Name: Страница КВАСОВАРНЯ
 		<div class="row">
 			<div class="col-md-12">
 				<div class="p_brewery__title">
-					Квасоварня
+					<?php
+						if ( function_exists( 'pll_the_languages' ) ) {
+					 		pll_e('Квасоварня'); 
+					 	}
+					?>
 				</div>
 				<div class="p_brewery__line"></div>
 			</div>
@@ -54,7 +58,11 @@ Template Name: Страница КВАСОВАРНЯ
 											<?php echo $brew['crb_brewery_text'] ?>
 										</div>
 										<div class="kvas-button">
-											Узнать подробности
+											<?php
+												if ( function_exists( 'pll_the_languages' ) ) {
+											 		pll_e('Дізнатися подробиці'); 
+											 	}
+											?>
 										</div>
 									</div>
 								</div>
