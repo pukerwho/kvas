@@ -133,15 +133,22 @@ Template Name: Главная страница
 								?>
 							</div>
 						</div>
-						<div class="animate-puk-mask">
-							<div class="p_main__brand-description animate-puk" data-effect="fade-up" data-delay="1.2s">
-								<?php
-									if ( function_exists( 'pll_the_languages' ) ) {
-								 		pll_e('Ми використовуємо найкращу якісну продукцію для нашого квасу'); 
-								 	}
-								?>
+						<?php 
+            $args_brand = [
+                'post_type' => 'page',
+                'fields' => 'ids',
+                'nopaging' => true,
+                'meta_key' => '_wp_page_template',
+                'meta_value' => 'tpl_brand.php'
+            ];
+            $pages_brands = get_posts( $args_brand );
+            foreach ( $pages_brands as $pages_brand ): ?> 
+            	<div class="animate-puk-mask">
+								<div class="p_main__brand-description animate-puk" data-effect="fade-up" data-delay="1.2s">
+									<?php echo carbon_get_post_meta($pages_brand, 'crb_brand_description') ?>
+								</div>
 							</div>
-						</div>
+            <?php endforeach; ?>
 						<div class="animate-puk-mask">
 							<a href="<?php echo get_page_url('tpl_brand') ?>">
 								<div class="kvas-button animate-puk" data-effect="fade-up" data-delay="1.5s">
