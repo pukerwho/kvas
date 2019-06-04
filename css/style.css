@@ -9857,6 +9857,7 @@ a:hover {
       margin-bottom: 40px; }
     .p_main__test-button {
       min-width: 190px;
+      position: relative;
       display: inline-block;
       color: #de0027;
       font-family: Oswald-Bold;
@@ -9867,7 +9868,34 @@ a:hover {
       text-transform: uppercase;
       text-align: center;
       cursor: pointer;
+      overflow: hidden;
       padding: 12px 17px; }
+      .p_main__test-button:after {
+        content: '';
+        width: 25px;
+        height: 140%;
+        position: absolute;
+        top: 0;
+        left: -webkit-calc(0% - 80px);
+        left: calc(0% - 80px);
+        -webkit-filter: blur(20px);
+        filter: blur(20px);
+        background-color: #bd0511;
+        -webkit-box-shadow: 0 0 29px 10px #bd0511;
+        -webkit-border-radius: 45px;
+        border-radius: 45px;
+        box-shadow: 0 0 29px 10px #bd0511;
+        -webkit-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+        transform: rotate(25deg);
+        -webkit-transition: left 1s;
+        -o-transition: left 1s;
+        transition: left 1s; }
+      .p_main__test-button:hover:after {
+        left: 200%;
+        -webkit-transition: left 1s;
+        -o-transition: left 1s;
+        transition: left 1s; }
   .p_brand__title {
     position: relative;
     color: #023753;
