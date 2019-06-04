@@ -8952,6 +8952,7 @@ li {
   list-style-type: none; }
 
 a:hover {
+  cursor: pointer;
   text-decoration: none; }
 
 .pc-show {
@@ -9095,10 +9096,6 @@ a:hover {
 .hero {
   height: 615px;
   position: relative;
-  background: url("../img/brand-img.jpg");
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: 50%;
   overflow: hidden;
   margin-bottom: 45px; }
   .hero-content {
@@ -9467,6 +9464,7 @@ a:hover {
     .header__lang a {
       color: #989898; }
   .header__right {
+    z-index: 8;
     margin-right: 35px; }
   .header__center {
     position: absolute;

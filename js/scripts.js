@@ -14,6 +14,10 @@ $(window).scroll(function(){
   }
 })
 
+$('a').click(function() {
+  window.location.href = window.location.href.substr(0, window.location.href.indexOf('#'));
+});
+
 var timeOut;
 function scrollToTop() {
   if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){

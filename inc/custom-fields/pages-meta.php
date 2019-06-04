@@ -35,6 +35,12 @@ function crb_page_theme_options() {
     ) );
   Container::make( 'post_meta', 'More' )
     ->where( 'post_type', '=', 'page' )
+    ->where( 'post_template', '=', 'tpl_brand.php' )
+    ->add_fields( array(
+      Field::make( 'textarea', 'crb_brand_description', 'Короткое описание' ),
+    ) );
+  Container::make( 'post_meta', 'More' )
+    ->where( 'post_type', '=', 'page' )
     ->where( 'post_template', '=', 'tpl_test.php' )
     ->add_fields( array(
       Field::make( 'complex', 'crb_test', 'Вопросы и ответы' )

@@ -7,7 +7,7 @@ Template Name: Страница БРЕНД
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	<div class="hero">
+	<div class="hero" style="background: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-position: 50%; background-size: cover;">
 		<div class="hero-content">
 			<div class="hero-subtitle">
 				<?php
@@ -24,7 +24,7 @@ Template Name: Страница БРЕНД
 				?>
 			</div>
 			<div class="hero-text">
-				Під ТМ «Арсеніївський» випускається квас бутильований, розливний, а також напої соковмісні.
+				<?php echo carbon_get_the_post_meta('crb_brand_description') ?>
 			</div>
 		</div>
 		<div class="hero-bottom">
@@ -42,7 +42,11 @@ Template Name: Страница БРЕНД
 			<div class="row">
 				<div class="col-md-12">
 					<div class="p_brand__title">
-						 ТМ «Арсеніївський»
+						<?php
+							if ( function_exists( 'pll_the_languages' ) ) {
+						 		pll_e('ТМ «Арсеніївський»'); 
+						 	}
+						?>
 					</div>
 				</div>
 			</div>
