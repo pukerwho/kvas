@@ -255,12 +255,18 @@ Template Name: Главная страница
 						</div>
 						<div class="p_main__questions-line"></div>
 						<div class="p_main__questions-description">
-							<?php
-								if ( function_exists( 'pll_the_languages' ) ) {
-							 		pll_e('Залишилися питання?'); 
-							 	}
-							?>
-							In the fields of economics, marketing and advertising, a consumer is generally defined as the one who pays to consume the goods and services produced by a seller (i.e., company, organization). A consumer can be a person (or group of people), generally categorized as an end user or target demographic for a product, good, or service. A consumer can be a person (or group of people), generally categorized as an end user or target demographic for a product, good, or service.
+							<?php 
+		          $args_questions = [
+		              'post_type' => 'page',
+		              'fields' => 'ids',
+		              'nopaging' => true,
+		              'meta_key' => '_wp_page_template',
+		              'meta_value' => 'tpl_main.php'
+		          ];
+		          $pages_questions = get_posts( $args_questions );
+		          foreach ( $pages_questions as $pages_question ): ?>
+		          	<?php echo carbon_get_post_meta($pages_question, 'crb_main_questions_description'); ?>
+		          <?php endforeach; ?>	
 						</div>
 						<div class="kvas-button__white">
 							<?php
@@ -287,7 +293,18 @@ Template Name: Главная страница
 		<div class="p_main__advantages-line"></div>
 		<div class="animate-puk-mask">
 			<div class="p_main__advantages-description animate-puk" data-effect="fade-up" data-delay="1.2s">
-				Живий хлібний квас ТМ «Арсеніївський» - натуральний хлібний квас, отриманий в результаті природного бродіння, непастеризований, і, на відміну від інших, не насичений штучно вуглекислим газом. 
+				<?php 
+        $args_advantages = [
+            'post_type' => 'page',
+            'fields' => 'ids',
+            'nopaging' => true,
+            'meta_key' => '_wp_page_template',
+            'meta_value' => 'tpl_main.php'
+        ];
+        $pages_advantages = get_posts( $args_advantages );
+        foreach ( $pages_advantages as $pages_advantage ): ?>
+        	<?php echo carbon_get_post_meta($pages_advantage, 'crb_main_adv_description'); ?>
+        <?php endforeach; ?>
 			</div>
 		</div>
 		<div class="container">

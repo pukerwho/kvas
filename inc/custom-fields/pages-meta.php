@@ -22,6 +22,8 @@ function crb_page_theme_options() {
           Field::make( 'image', 'crb_advantages_photo', 'Картинка' )->set_value_type( 'url'),
           Field::make( 'text', 'crb_advantages_text', 'Преимущество' ),
       ) ),
+      Field::make( 'textarea', 'crb_main_questions_description', 'Текст для блока ОСТАЛИСЬ ВОПРОСЫ' ),
+      Field::make( 'textarea', 'crb_main_adv_description', 'Текст для блока ПРЕИМУЩЕСТВА' ),
     ) );
   Container::make( 'post_meta', 'More' )
     ->where( 'post_type', '=', 'page' )
