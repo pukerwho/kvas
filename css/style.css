@@ -9064,7 +9064,35 @@ a:hover {
     font-size: 20px;
     margin-bottom: 40px; }
   .main-hero .kvas-button__white {
-    color: #bd0511; }
+    position: relative;
+    color: #bd0511;
+    overflow: hidden; }
+    .main-hero .kvas-button__white:after {
+      content: '';
+      width: 25px;
+      height: 140%;
+      position: absolute;
+      top: 0;
+      left: -webkit-calc(0% - 80px);
+      left: calc(0% - 80px);
+      -webkit-filter: blur(20px);
+      filter: blur(20px);
+      background-color: #bd0511;
+      -webkit-box-shadow: 0 0 29px 10px #bd0511;
+      -webkit-border-radius: 45px;
+      border-radius: 45px;
+      box-shadow: 0 0 29px 10px #bd0511;
+      -webkit-transform: rotate(25deg);
+      -ms-transform: rotate(25deg);
+      transform: rotate(25deg);
+      -webkit-transition: left 1s;
+      -o-transition: left 1s;
+      transition: left 1s; }
+    .main-hero .kvas-button__white:hover:after {
+      left: 200%;
+      -webkit-transition: left 1s;
+      -o-transition: left 1s;
+      transition: left 1s; }
 
 .main-hero-swiper {
   width: 100%;
@@ -9381,6 +9409,7 @@ a:hover {
 /* BUTTONS */
 .kvas-button {
   min-width: 190px;
+  position: relative;
   display: inline-block;
   color: #ffffff;
   font-family: Oswald-Bold;
@@ -9391,9 +9420,37 @@ a:hover {
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
+  overflow: hidden;
   padding: 12px 17px; }
+  .kvas-button:after {
+    content: '';
+    width: 25px;
+    height: 140%;
+    position: absolute;
+    top: 0;
+    left: -webkit-calc(0% - 60px);
+    left: calc(0% - 60px);
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 29px 10px #ffffff;
+    -webkit-border-radius: 45px;
+    border-radius: 45px;
+    box-shadow: 0 0 29px 10px #ffffff;
+    -webkit-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    transform: rotate(25deg);
+    -webkit-transition: left 1s;
+    -o-transition: left 1s;
+    transition: left 1s; }
+  .kvas-button:hover:after {
+    left: 200%;
+    -webkit-transition: left 1s;
+    -o-transition: left 1s;
+    transition: left 1s; }
   .kvas-button__white {
     min-width: 190px;
+    position: relative;
     display: inline-block;
     color: #02ba66;
     font-family: Oswald-Bold;
@@ -9404,7 +9461,34 @@ a:hover {
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
+    overflow: hidden;
     padding: 12px 17px; }
+    .kvas-button__white:after {
+      content: '';
+      width: 25px;
+      height: 140%;
+      position: absolute;
+      top: 0;
+      left: -webkit-calc(0% - 60px);
+      left: calc(0% - 60px);
+      -webkit-filter: blur(20px);
+      filter: blur(20px);
+      background-color: #02ba66;
+      -webkit-box-shadow: 0 0 29px 10px #02ba66;
+      -webkit-border-radius: 45px;
+      border-radius: 45px;
+      box-shadow: 0 0 29px 10px #02ba66;
+      -webkit-transform: rotate(25deg);
+      -ms-transform: rotate(25deg);
+      transform: rotate(25deg);
+      -webkit-transition: left 1s;
+      -o-transition: left 1s;
+      transition: left 1s; }
+    .kvas-button__white:hover:after {
+      left: 200%;
+      -webkit-transition: left 1s;
+      -o-transition: left 1s;
+      transition: left 1s; }
 
 .header {
   width: 100%;

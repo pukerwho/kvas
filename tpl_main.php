@@ -222,8 +222,8 @@ Template Name: Главная страница
 					<!-- <div class="d-flex justify-content-center">
 						<div class="swiper-pagination"></div>	
 					</div> -->
-					<a href="<?php echo get_page_url('tpl_products') ?>">
-						<div class="d-flex justify-content-center">
+					<div class="d-flex justify-content-center">
+						<a href="<?php echo get_page_url('tpl_products') ?>">
 							<div class="kvas-button">
 								<?php
 									if ( function_exists( 'pll_the_languages' ) ) {
@@ -231,8 +231,8 @@ Template Name: Главная страница
 								 	}
 								?>
 							</div>
-						</div>
-					</a>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -268,13 +268,15 @@ Template Name: Главная страница
 		          	<?php echo carbon_get_post_meta($pages_question, 'crb_main_questions_description'); ?>
 		          <?php endforeach; ?>	
 						</div>
-						<div class="kvas-button__white">
-							<?php
-								if ( function_exists( 'pll_the_languages' ) ) {
-							 		pll_e('Дізнатися більше'); 
-							 	}
-							?>
-						</div>
+						<a href="<?php echo get_page_url('tpl_faq') ?>">
+							<div class="kvas-button__white">
+								<?php
+									if ( function_exists( 'pll_the_languages' ) ) {
+								 		pll_e('Дізнатися більше'); 
+								 	}
+								?>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
