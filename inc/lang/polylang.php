@@ -37,6 +37,8 @@ pll_register_string( 'similar_products', 'Схожі товари' );
 pll_register_string( 'brand', 'Бренд' );
 pll_register_string( 'arsen', '«АРСЕНІЇВСЬКИЙ»' );
 pll_register_string( 'arsen_two', 'ТМ «Арсеніївський»' );
+pll_register_string( 'copyright', '2019 Арсеньевский. Всі права захищені' );
+pll_register_string( 'copyright_dev', 'Розроблено' );
 pll_register_string( 'down', 'Вниз' );
 pll_register_string( 'brand_arsen', 'Бренд Арсеніївський' );
 pll_register_string( 'brand_description', 'Ми використовуємо найкращу якісну продукцію для нашого квасу' );

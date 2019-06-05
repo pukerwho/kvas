@@ -64,12 +64,16 @@
     					<div>
     						© <?php
 									if ( function_exists( 'pll_the_languages' ) ) {
-								 		pll_e('2019 Arsenevskiy. All rights reserved	'); 
+								 		pll_e('2019 Арсеньевский. Всі права захищені'); 
 								 	}
 								?>
     					</div>
     					<div>
-    						Разработано <a href="http://webkitchen.kiev.ua/" target="_blank">Webkitchen</a>
+    						<?php
+									if ( function_exists( 'pll_the_languages' ) ) {
+								 		pll_e('Розроблено'); 
+								 	}
+								?> <a href="http://webkitchen.kiev.ua/" target="_blank">Webkitchen</a>
     					</div>
     				</div>
     			</div>
