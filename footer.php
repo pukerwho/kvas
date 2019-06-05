@@ -58,6 +58,22 @@
 	          </div>
     			</div>
     		</div>
+    		<div class="row">
+    			<div class="col-md-12">
+    				<div class="copyright">
+    					<div>
+    						© <?php
+									if ( function_exists( 'pll_the_languages' ) ) {
+								 		pll_e('2019 Arsenevskiy. All rights reserved	'); 
+								 	}
+								?>
+    					</div>
+    					<div>
+    						Разработано <a href="http://webkitchen.kiev.ua/" target="_blank">Webkitchen</a>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
     	</div>
     </footer>
     <?php if( is_page_template( 'tpl_test.php' )): ?>
@@ -104,13 +120,15 @@
 		            			</div>
 		            		<?php endforeach; ?>
 	            		</div>
-	            		<div class="kvas-button">
-	            			<?php
-											if ( function_exists( 'pll_the_languages' ) ) {
-										 		pll_e('Вибрати квас'); 
-										 	}
-										?>
-	            		</div>
+	            		<a href="<?php echo get_page_url('tpl_products') ?>">
+		            		<div class="kvas-button">
+		            			<?php
+												if ( function_exists( 'pll_the_languages' ) ) {
+											 		pll_e('Вибрати квас'); 
+											 	}
+											?>
+		            		</div>
+		            	</a>
 	            	</div>
 	            </div>
 	          </div>

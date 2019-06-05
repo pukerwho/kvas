@@ -9,22 +9,28 @@ Template Name: Страница БРЕНД
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class="hero" style="background: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-position: 50%; background-size: cover;">
 		<div class="hero-content">
-			<div class="hero-subtitle">
-				<?php
-					if ( function_exists( 'pll_the_languages' ) ) {
-				 		pll_e('Бренд'); 
-				 	}
-				?>
+			<div class="animate-puk-mask">
+				<div class="hero-subtitle">
+					<?php
+						if ( function_exists( 'pll_the_languages' ) ) {
+					 		pll_e('Бренд'); 
+					 	}
+					?>
+				</div>
 			</div>
-			<div class="hero-title">
-				<?php
-					if ( function_exists( 'pll_the_languages' ) ) {
-				 		pll_e('«АРСЕНІЇВСЬКИЙ»'); 
-				 	}
-				?>
+			<div class="animate-puk-mask">
+				<div class="hero-title">
+					<?php
+						if ( function_exists( 'pll_the_languages' ) ) {
+					 		pll_e('«АРСЕНІЇВСЬКИЙ»'); 
+					 	}
+					?>
+				</div>
 			</div>
-			<div class="hero-text">
-				<?php echo carbon_get_the_post_meta('crb_brand_description') ?>
+			<div class="animate-puk-mask">
+				<div class="hero-text">
+					<?php echo carbon_get_the_post_meta('crb_brand_description') ?>
+				</div>
 			</div>
 		</div>
 		<div class="hero-bottom">

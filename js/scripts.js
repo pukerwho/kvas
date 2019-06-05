@@ -14,6 +14,10 @@ $(window).scroll(function(){
   }
 })
 
+jQuery(document).ready(function($){
+  $('.hero').addClass('hero__active');
+})
+
 $('a').click(function() {
   window.location.href = window.location.href.substr(0, window.location.href.indexOf('#'));
 });
