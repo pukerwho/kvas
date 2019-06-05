@@ -101,13 +101,15 @@ Template Name: Главная страница
 												<div class="p_brewery__text">
 													<?php echo $brew['crb_brewery_text'] ?>
 												</div>
-												<div class="kvas-button">
-													<?php
-														if ( function_exists( 'pll_the_languages' ) ) {
-													 		pll_e('Дізнатися подробиці'); 
-													 	}
-													?>
-												</div>
+												<a href="<?php echo get_page_url('tpl_brewery') ?>">
+													<div class="kvas-button">
+														<?php
+															if ( function_exists( 'pll_the_languages' ) ) {
+														 		pll_e('Дізнатися подробиці'); 
+														 	}
+														?>
+													</div>
+												</a>
 											</div>
 										</div>
 									</div>

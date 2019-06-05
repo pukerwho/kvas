@@ -11641,6 +11641,13 @@ button.swiper-pagination-bullet {
   /* Windows 8 IE 10 fix */
   -ms-perspective: 1200px; }
 
+@media (min-width: 1728px) {
+  .p_main__brand-photo {
+    width: 55%; }
+  .p_main__questions-photo {
+    width: 56%; }
+  .p_main__questions-absolute {
+    width: 7%; } }
 @media (min-width: 992px) and (max-width: 1228px) {
   .menu li a {
     font-size: 13px; } }
