@@ -11667,8 +11667,13 @@ button.swiper-pagination-bullet {
     position: absolute;
     left: 0;
     top: 110px; }
+    .header__top a {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
     .header__top-item {
-      min-width: auto; }
+      min-width: 100%; }
   .header__center {
     display: none; }
   .header__right {
@@ -11852,6 +11857,8 @@ button.swiper-pagination-bullet {
     .p_main__questions-content {
       height: 100%;
       padding: 30px 0; }
+    .p_main__questions-absolute {
+      display: none; }
   .p_main__advantages-description {
     width: 100%;
     padding: 0 30px;
