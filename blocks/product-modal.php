@@ -85,7 +85,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<div class="swiper-products swiper-container">
+								<div class="swiper-products-similar swiper-container">
 									<div class="swiper-wrapper">
 										<?php
 										$custom_query_products_inner = new WP_Query( array( 'post_type' => 'products') );

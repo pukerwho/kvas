@@ -8983,6 +8983,9 @@ a:hover {
   .swiper-pagination .swiper-pagination-bullet-active {
     background: #de0027; }
 
+.swiper-products-similar {
+  margin-bottom: 100px !important; }
+
 /* SLIDER PUK */
 .slider-puk-container {
   overflow: hidden; }
@@ -9804,8 +9807,14 @@ a:hover {
       font-size: 18px;
       text-align: center;
       margin-bottom: 100px; }
+    .p_main__products .swiper-products-button-next {
+      background-image: url("../img/right.svg"); }
+    .p_main__products .swiper-products-button-prev {
+      background-image: url("../img/left.svg"); }
     .p_main__products .swiper-products {
       margin-bottom: 100px; }
+    .p_main__products .p_products__modal-box {
+      margin-bottom: 40px; }
   .p_main__questions-absolute {
     height: 470px;
     width: 134px;
