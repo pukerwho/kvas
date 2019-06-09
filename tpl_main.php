@@ -197,30 +197,39 @@ Template Name: Главная страница
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="swiper-products swiper-container">
-						<div class="swiper-wrapper">
-							<?php
-							$custom_query_products = new WP_Query( array( 'post_type' => 'products') );
-							if ($custom_query_products->have_posts()) : while ($custom_query_products->have_posts()) : $custom_query_products->the_post(); ?>
-								<?php $i++; $i=$i/1.5 ?>
-								<div class="p_products__slide swiper-slide animate-puk" data-product-slide="product-<?php echo get_the_id(); ?>" >
-									<div class="animate-puk-mask">
-										<div class="animate-puk" data-effect="fade-up" data-delay="<?php echo $i ?>s">
-											<div class="p_products__slide-top">
-												<div class="p_products__slide-cover" style="background-color: <?php echo carbon_get_the_post_meta('crb_product_color') ?>;"></div>
-												<div class="p_products__slide-photo">
-													<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+					<div class="p_products__block">
+						<div class="swiper-products swiper-container">
+							<div class="swiper-wrapper">
+								<?php
+								$custom_query_products = new WP_Query( array( 
+									'post_type' => 'products'
+								) );
+								if ($custom_query_products->have_posts()) : while ($custom_query_products->have_posts()) : $custom_query_products->the_post(); ?>
+									<?php $i++; $i=$i/1.5 ?>
+									<div class="p_products__slide swiper-slide animate-puk" data-product-slide="product-<?php echo get_the_id(); ?>" >
+										<div class="animate-puk-mask">
+											<div class="animate-puk" data-effect="fade-up" data-delay="<?php echo $i ?>s">
+												<div class="p_products__slide-top">
+													<div class="p_products__slide-cover" style="background-color: <?php echo carbon_get_the_post_meta('crb_product_color') ?>;"></div>
+													<div class="p_products__slide-photo">
+														<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+													</div>
 												</div>
-											</div>
-											<div class="p_products__slide-title">
-												<?php the_title(); ?>	
+												<div class="p_products__slide-title">
+													<?php the_title(); ?>	
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-							<?php endwhile; endif; ?>
+								<?php endwhile; endif; ?>
+							</div>
 						</div>
 					</div>
+					<?php
+					$custom_query_products = new WP_Query( array( 'post_type' => 'products') );
+					if ($custom_query_products->have_posts()) : while ($custom_query_products->have_posts()) : $custom_query_products->the_post(); ?>
+						<?php get_template_part('blocks/product-modal') ?>
+					<?php endwhile; endif; ?>
 					<!-- <div class="d-flex justify-content-center">
 						<div class="swiper-pagination"></div>	
 					</div> -->

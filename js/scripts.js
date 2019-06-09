@@ -22,15 +22,6 @@ $('a').click(function() {
   window.location.href = window.location.href.substr(0, window.location.href.indexOf('#'));
 });
 
-var timeOut;
-function scrollToTop() {
-  if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
-    window.scrollBy(0,-50);
-    timeOut=setTimeout('scrollToTop()',15);
-  }
-  else clearTimeout(timeOut);
-}
-
 $('.p_faq__item').on('click', function(){
   $(this).toggleClass('p_faq__item-open');
 });
@@ -141,13 +132,22 @@ var swiperProductsFunc = function() {
 swiperProductsFunc();
 
 //Product Modal 
+function scrollToTop(value) {
+  console.log(value);
+  var targetScroll =  $('#' + value).offset().top;
+  $('html, body').animate({
+      scrollTop: (targetScroll - 100)
+  }, 500);
+  value.stopPropagation();
+}
+
 $('.p_products__slide').on('click', function(){
   $('.p_products__modal').removeClass('p_products__modal-open');
   $('.p_products__block').removeClass('p_products__block-hide');
   productModal = $(this).data('product-slide');
   $('.'+productModal+'').addClass('p_products__modal-open');
   $('.p_products__block').addClass('p_products__block-hide');
-  scrollToTop();
+  scrollToTop(productModal);
   swiperProductsFunc();
 })
 
