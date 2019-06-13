@@ -32,37 +32,41 @@ Template Name: Страница КВАСОВАРНЯ
 							<?php $brew_number++; ?>
 							<div class="slider-puk-slide" data-slider-puk-id="<?php echo $brew_number ?>">
 								<div class="p_brewery__grid">
-									<div class="animate-puk-mask">
-										<div class="p_brewery__img">
-											<img src="<?php echo $brew['crb_brewery_photo'] ?>" alt="">
-											<div class="p_brewery__number">
-												<div class="p_brewery__number-inner">
-													<?php echo $brew_number ?>.	
+									<div class="p_brewery__item">
+										<div class="animate-puk-mask">
+											<div class="p_brewery__img">
+												<img src="<?php echo $brew['crb_brewery_photo'] ?>" alt="">
+												<div class="p_brewery__number">
+													<div class="p_brewery__number-inner">
+														<?php echo $brew_number ?>.	
+													</div>
 												</div>
-											</div>
-											<div class="slider-puk-left">
-												<img src="<?php bloginfo('template_url') ?>/img/left.svg" alt="">
-											</div>
-											<div class="slider-puk-right">
-												<img src="<?php bloginfo('template_url') ?>/img/right.svg" alt="">
+												<div class="slider-puk-left">
+													<img src="<?php bloginfo('template_url') ?>/img/left.svg" alt="">
+												</div>
+												<div class="slider-puk-right">
+													<img src="<?php bloginfo('template_url') ?>/img/right.svg" alt="">
+												</div>
 											</div>
 										</div>
 									</div>
-									<div class="p_brewery__content">
-										<div class="animate-puk-mask">
-											<div class="p_brewery__subtitle">
-												<?php echo $brew['crb_brewery_title'] ?>
+									<div class="p_brewery__item">
+										<div class="p_brewery__content">
+											<div class="animate-puk-mask">
+												<div class="p_brewery__subtitle">
+													<?php echo $brew['crb_brewery_title'] ?>
+												</div>
 											</div>
-										</div>
-										<div class="p_brewery__text">
-											<?php echo $brew['crb_brewery_text'] ?>
-										</div>
-										<div class="kvas-button">
-											<?php
-												if ( function_exists( 'pll_the_languages' ) ) {
-											 		pll_e('Дізнатися подробиці'); 
-											 	}
-											?>
+											<div class="p_brewery__text">
+												<?php echo $brew['crb_brewery_text'] ?>
+											</div>
+											<div class="kvas-button">
+												<?php
+													if ( function_exists( 'pll_the_languages' ) ) {
+												 		pll_e('Дізнатися подробиці'); 
+												 	}
+												?>
+											</div>
 										</div>
 									</div>
 								</div>

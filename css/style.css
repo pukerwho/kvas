@@ -10115,6 +10115,8 @@ a:hover {
       -webkit-align-items: center;
       align-items: center;
       grid-gap: 30px; }
+    .p_brewery__item {
+      -ms-grid-column: 1; }
     .p_brewery__subtitle {
       color: #023753;
       font-family: Oswald-Medium;
