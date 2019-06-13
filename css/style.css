@@ -10109,7 +10109,7 @@ a:hover {
     .p_brewery__grid {
       display: -ms-grid;
       display: grid;
-      -ms-grid-columns: 50% 50%;
+      -ms-grid-columns: 1fr 1fr;
       grid-template-columns: repeat(2, 50%);
       -webkit-box-align: center;
       -webkit-align-items: center;
