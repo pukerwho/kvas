@@ -14,7 +14,7 @@ Template Name: Главная страница
 			$mainsliders = carbon_get_the_post_meta('crb_main_hero');
 			foreach( $mainsliders as $mainslider ): ?>
 				<div class="swiper-slide">
-					<div class="main-hero" style="background-image: url(<?php echo $mainslider['crb_main_hero_photo'] ?>) ;background-size: cover; -webkit-background-size: cover; background-position: top">
+					<div class="main-hero" style="background-image: url(<?php echo $mainslider['crb_main_hero_photo'] ?>) ;background-size: cover; -webkit-background-size: cover; background-position: center top;">
 						<div class="container">
 							<div class="row">
 								<div class="col-md-5 offset-md-7">
@@ -78,7 +78,7 @@ Template Name: Главная страница
 										<div class="p_brewery__grid">
 											<div class="p_brewery__item">
 												<div class="animate-puk-mask">
-													<div class="p_brewery__img">
+													<div class="p_brewery__img object-fit">
 														<img src="<?php echo $brew['crb_brewery_photo'] ?>" alt="">
 														<div class="p_brewery__number">
 															<div class="p_brewery__number-inner">
@@ -154,7 +154,6 @@ Template Name: Главная страница
 									<?php echo carbon_get_post_meta($pages_brand, 'crb_brand_description') ?>
 								</div>
 							</div>
-            <?php endforeach; ?>
 						<div class="animate-puk-mask">
 							<a href="<?php echo get_page_url('tpl_brand') ?>">
 								<div class="kvas-button animate-puk" data-effect="fade-up" data-delay="1.5s">
@@ -170,9 +169,10 @@ Template Name: Главная страница
 				</div>
 			</div>
 		</div>
-		<div class="p_main__brand-photo">
-			<img src="<?php bloginfo('template_url') ?>/img/kvass.jpg" alt="">
+		<div class="p_main__brand-photo object-fit">
+			<img src="<?php echo get_the_post_thumbnail_url($pages_brand); ?>" alt="">
 		</div>
+		<?php endforeach; ?>
 	</div>
 	<div class="p_main__products">
 		<div class="container">
@@ -215,7 +215,7 @@ Template Name: Главная страница
 											<div class="animate-puk" data-effect="fade-up" data-delay="<?php echo $i ?>s">
 												<div class="p_products__slide-top">
 													<div class="p_products__slide-cover" style="background-color: <?php echo carbon_get_the_post_meta('crb_product_color') ?>;"></div>
-													<div class="p_products__slide-photo">
+													<div class="p_products__slide-photo object-fit">
 														<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 													</div>
 												</div>
@@ -253,7 +253,7 @@ Template Name: Главная страница
 		</div>
 	</div>
 	<div class="p_main__questions">
-		<div class="p_main__questions-photo">
+		<div class="p_main__questions-photo object-fit">
 			<img src="<?php bloginfo('template_url') ?>/img/questions.jpg" alt="">
 		</div>
 		<div class="p_main__questions-absolute"></div>
@@ -347,7 +347,7 @@ Template Name: Главная страница
 									<div class="swiper-slide">
 										<div class="animate-puk-mask">
 											<div class="animate-puk" data-effect="fade-up" data-delay="<?php echo $i ?>s">
-												<div class="p_main__advantages-photo">
+												<div class="p_main__advantages-photo object-fit">
 													<img src="<?php echo $advantage['crb_advantages_photo'] ?>">
 												</div>
 												<div class="p_main__advantages-text">

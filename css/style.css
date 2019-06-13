@@ -8970,6 +8970,9 @@ a:hover {
 #content {
   margin-top: 110px; }
 
+.custom-object-fit img {
+  opacity: 0; }
+
 .swiper-pagination {
   z-index: 7 !important; }
   .swiper-pagination .swiper-pagination-bullet {
@@ -10180,6 +10183,8 @@ a:hover {
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
       cursor: pointer; }
+      .p_brewery .slider-puk-left img {
+        opacity: 1; }
     .p_brewery .slider-puk-right {
       width: 27px;
       position: absolute;
@@ -10189,6 +10194,8 @@ a:hover {
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
       cursor: pointer; }
+      .p_brewery .slider-puk-right img {
+        opacity: 1; }
     .p_brewery .slider-puk-slide .p_brewery__subtitle {
       opacity: 0;
       -ms-transform: translateY(50%);

@@ -9,7 +9,7 @@ Template Name: Страница ТЕСТ
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <div class="p_test">
-	<div class="p_test__banner">
+	<div class="p_test__banner object-fit">
 		<img src="<?php echo get_the_post_thumbnail_url(); ?>" srcset="<?php echo get_the_post_thumbnail_url('full'); ?>" alt="">
 	</div>
 	<div class="container">

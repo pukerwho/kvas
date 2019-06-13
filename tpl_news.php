@@ -31,7 +31,7 @@ Template Name: Страница НОВОСТИ
 	  	<div class="p_posts__first">
 				<div class="row align-items-center justify-content-center">
 					<div class="col-md-5">
-						<div class="p_posts__first-img">
+						<div class="p_posts__first-img object-fit">
 							<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 						</div>
 					</div>
@@ -66,7 +66,7 @@ Template Name: Страница НОВОСТИ
 					  if ($custom_query_news->have_posts()) : while ($custom_query_news->have_posts()) : $custom_query_news->the_post(); ?>
 					  	<a href="<?php echo get_the_permalink(); ?>">
 				  			<div class="p_posts__item swiper-slide">
-				  				<div class="p_posts__item-img">
+				  				<div class="p_posts__item-img object-fit">
 				  					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 				  				</div>
 				  				<div class="p_posts__item-title">

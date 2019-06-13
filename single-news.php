@@ -25,7 +25,7 @@
 						<?php echo get_the_date('j/m/y') ?>
 					</div>
 				</div>
-				<div class="p_post__photo">
+				<div class="p_post__photo object-fit">
 					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 				</div>
 				<div class="p_post__content">

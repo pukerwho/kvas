@@ -22,6 +22,21 @@ $('a').click(function() {
   window.location.href = window.location.href.substr(0, window.location.href.indexOf('#'));
 });
 
+var userAgent, ieReg, ie;
+userAgent = window.navigator.userAgent;
+ieReg = /msie|Trident.*rv[ :]*11\./gi;
+ie = ieReg.test(userAgent);
+
+if(ie) {
+  $(".object-fit").each(function () {
+    var $container = $(this),
+        imgUrl = $container.find("img").prop("src");
+    if (imgUrl) {
+      $container.css({"background-image":'url(' + imgUrl + ')', "background-size":"cover", "background-position": "center top"}).addClass("custom-object-fit");
+    }
+  });
+}
+
 $('.p_faq__item').on('click', function(){
   $(this).toggleClass('p_faq__item-open');
 });

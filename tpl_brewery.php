@@ -34,7 +34,7 @@ Template Name: Страница КВАСОВАРНЯ
 								<div class="p_brewery__grid">
 									<div class="p_brewery__item">
 										<div class="animate-puk-mask">
-											<div class="p_brewery__img">
+											<div class="p_brewery__img object-fit">
 												<img src="<?php echo $brew['crb_brewery_photo'] ?>" alt="">
 												<div class="p_brewery__number">
 													<div class="p_brewery__number-inner">

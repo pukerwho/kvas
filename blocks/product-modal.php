@@ -16,7 +16,7 @@
 							<div class="col-md-10">
 								<div class="p_products__modal-grid">
 									<div class="p_products__modal-item">
-										<div class="p_products__modal-photo">
+										<div class="p_products__modal-photo object-fit">
 											<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">	
 										</div>
 									</div>
@@ -93,7 +93,7 @@
 											<div class="p_products__slide swiper-slide" data-product-slide="product-<?php echo get_the_id(); ?>">
 												<div class="p_products__slide-top">
 													<div class="p_products__slide-cover" style="background-color: <?php echo carbon_get_the_post_meta('crb_product_color') ?>;"></div>
-													<div class="p_products__slide-photo">
+													<div class="p_products__slide-photo object-fit">
 														<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 													</div>
 													<div class="p_products__slide-volume">
