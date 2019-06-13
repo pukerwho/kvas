@@ -12031,7 +12031,8 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-bottom: 25px; }
   .footer__logo {
     width: 100%;
     text-align: center; }
@@ -12049,7 +12050,18 @@ button.swiper-pagination-bullet {
     align-items: center;
     margin-bottom: 15px; }
   .footer__menu li {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .footer .copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 2.5; } }
 @media (min-width: 768px) and (max-width: 992px) {
   .p_main__brand-photo {
     height: 350px;
