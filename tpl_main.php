@@ -228,6 +228,9 @@ Template Name: Главная страница
 								<?php endwhile; endif; ?>
 							</div>
 						</div>
+						<div class="d-flex justify-content-center">
+							<div class="swiper-pagination swiper-mainproducts-pagination"></div>	
+						</div>
 					</div>
 					<?php
 					$custom_query_products = new WP_Query( array( 'post_type' => 'products') );

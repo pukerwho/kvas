@@ -8,6 +8,8 @@ function crb_post_theme_options() {
   Container::make( 'post_meta', 'More' )
     ->where( 'post_type', '=', 'products' )
     ->add_fields( array(
+      Field::make( 'checkbox', 'crb_product_kvas', 'Квас' )->set_option_value('no'),
+      Field::make( 'checkbox', 'crb_product_drink', 'Напиток' )->set_option_value('no'),
       Field::make( 'color', 'crb_product_color', 'Цвет фона' ),
       Field::make( 'text', 'crb_product_volume', 'Обьем' ),
       Field::make( 'text', 'crb_product_qty', 'Кол-во в коробке' ),

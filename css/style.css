@@ -9819,8 +9819,10 @@ a:hover {
       background-image: url("../img/right.svg"); }
     .p_main__products .swiper-products-button-prev {
       background-image: url("../img/left.svg"); }
+    .p_main__products .p_products__block {
+      margin-bottom: 70px; }
     .p_main__products .swiper-products {
-      margin-bottom: 100px; }
+      margin-bottom: 30px; }
     .p_main__products .p_products__modal-box {
       margin-bottom: 40px; }
   .p_main__questions-absolute {
@@ -10255,7 +10257,7 @@ a:hover {
   .p_products {
     position: relative;
     padding-top: 30px;
-    padding-bottom: 70px; }
+    padding-bottom: 30px; }
     .p_products .swiper-products {
       margin-left: -30px;
       margin-right: -30px;
@@ -10384,7 +10386,8 @@ a:hover {
           border-bottom: 1px solid transparent; }
     .p_products__slide {
       cursor: pointer;
-      padding: 0 30px; }
+      padding: 0 30px;
+      margin-bottom: 40px; }
       .p_products__slide-top {
         height: 320px;
         position: relative;
@@ -10438,7 +10441,7 @@ a:hover {
           width: 24px;
           margin-right: 10px; }
       .p_products__slide:hover .p_products__slide-cover {
-        height: 435px;
+        height: 110%;
         -webkit-transition: all 0.45s;
         -o-transition: all 0.45s;
         transition: all 0.45s; }
@@ -10449,6 +10452,23 @@ a:hover {
         -webkit-transition: all 0.45s;
         -o-transition: all 0.45s;
         transition: all 0.45s; }
+    .p_products__inner {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      .p_products__inner-title {
+        color: #023753;
+        font-family: Oswald-Bold;
+        font-size: 36px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 30px; }
+      .p_products__inner-line {
+        width: 78px;
+        height: 1px;
+        background-color: #979797;
+        margin: auto;
+        margin-bottom: 50px; }
   .p_posts {
     padding-top: 55px;
     margin-bottom: 65px; }

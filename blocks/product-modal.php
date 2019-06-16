@@ -110,7 +110,7 @@
 									<div class="swiper-button-prev swiper-products-button-prev"></div>
 								</div>
 								<div class="d-flex justify-content-center">
-									<div class="swiper-pagination"></div>	
+									<div class="swiper-pagination swiper-innerproduct-pagination"></div>	
 								</div>
 							</div>
 						</div>

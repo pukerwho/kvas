@@ -121,7 +121,7 @@ var swiperProductsFunc = function() {
       slidesPerView: 3,
       loop: true,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-mainproducts-pagination',
       },
       navigation: {
         nextEl: '.swiper-products-button-next',
@@ -134,7 +134,7 @@ var swiperProductsFunc = function() {
       slidesPerView: 1,
       loop: true,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-mainproducts-pagination',
       },
       navigation: {
         nextEl: '.swiper-products-button-next',
@@ -150,7 +150,7 @@ var swiperProductsSimilarFunc = function() {
       slidesPerView: 3,
       loop: true,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-innerproduct-pagination',
       },
       navigation: {
         nextEl: '.swiper-products-button-next',
@@ -163,7 +163,7 @@ var swiperProductsSimilarFunc = function() {
       slidesPerView: 1,
       loop: true,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-innerproduct-pagination',
       },
       navigation: {
         nextEl: '.swiper-products-button-next',
@@ -200,6 +200,7 @@ $('.p_products__slide').on('click', function(){
 $('.p_products__modal-close').on('click', function(){
   $('.p_products__modal').removeClass('p_products__modal-open');
   $('.p_products__block').removeClass('p_products__block-hide');
+  swiperProductsFunc();
   swiperProductsSimilarFunc();
 })
 
