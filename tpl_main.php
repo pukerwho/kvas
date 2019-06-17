@@ -169,10 +169,10 @@ Template Name: Главная страница
 				</div>
 			</div>
 		</div>
-		<div class="p_main__brand-photo object-fit">
-			<img src="<?php echo get_the_post_thumbnail_url($pages_brand); ?>" alt="">
-		</div>
 		<?php endforeach; ?>
+		<div class="p_main__brand-photo object-fit">
+			<img src="<?php echo carbon_get_the_post_meta('crb_main_brand_photo') ?>" alt="">
+		</div>
 	</div>
 	<div class="p_main__products">
 		<div class="container">
@@ -225,11 +225,11 @@ Template Name: Главная страница
 											</div>
 										</div>
 									</div>
-								<?php endwhile; endif; ?>
+								<?php endwhile; endif; wp_reset_postdata(); ?>
 							</div>
 						</div>
 						<div class="d-flex justify-content-center">
-							<div class="swiper-pagination swiper-mainproducts-pagination"></div>	
+							<div class="swiper-mainproducts-pagination"></div>	
 						</div>
 					</div>
 					<?php

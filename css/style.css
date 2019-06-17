@@ -8973,21 +8973,21 @@ a:hover {
 .custom-object-fit img {
   opacity: 0; }
 
-.swiper-pagination {
+.swiper-pagination, .swiper-mainproducts-pagination, .swiper-innerproduct-pagination {
   z-index: 7 !important; }
-  .swiper-pagination .swiper-pagination-bullet {
+  .swiper-pagination .swiper-pagination-bullet, .swiper-mainproducts-pagination .swiper-pagination-bullet, .swiper-innerproduct-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
     background: #e5e5e5;
     opacity: 1;
     margin-right: 10px; }
-    .swiper-pagination .swiper-pagination-bullet:last-child {
+    .swiper-pagination .swiper-pagination-bullet:last-child, .swiper-mainproducts-pagination .swiper-pagination-bullet:last-child, .swiper-innerproduct-pagination .swiper-pagination-bullet:last-child {
       margin-right: 0; }
-  .swiper-pagination .swiper-pagination-bullet-active {
+  .swiper-pagination .swiper-pagination-bullet-active, .swiper-mainproducts-pagination .swiper-pagination-bullet-active, .swiper-innerproduct-pagination .swiper-pagination-bullet-active {
     background: #de0027; }
 
 .swiper-products-similar {
-  margin-bottom: 100px !important; }
+  margin-bottom: 70px !important; }
 
 /* SLIDER PUK */
 .slider-puk-container {
@@ -11912,6 +11912,26 @@ button.swiper-pagination-bullet {
     .mobile-lang .current-lang {
       display: none; }
 
+  .p_posts__first-img {
+    margin-bottom: 30px; }
+  .p_posts__first-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .p_posts__first-info .d-flex {
+      margin-bottom: 20px; }
+      .p_posts__first-info .d-flex:last-of-type {
+        margin-bottom: 0; }
   .p_post__first-img {
     margin-bottom: 30px; }
   .p_post__grid {
@@ -12060,10 +12080,13 @@ button.swiper-pagination-bullet {
     .main-hero-swiper {
       height: -webkit-calc(100vh - 110px);
       height: calc(100vh - 110px); }
+    .main-hero__title {
+      font-size: 38px; }
+    .main-hero .kvas-button__white {
+      margin-bottom: 30px; }
 
   .main-hero-swiper-pagination {
     position: relative;
-    bottom: 50px !important;
     margin-left: 15px; }
 
   .testresult__modal-box {

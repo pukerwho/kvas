@@ -17,6 +17,7 @@ function crb_page_theme_options() {
           Field::make( 'textarea', 'crb_main_hero_description', 'Описание' ),
           Field::make( 'text', 'crb_main_hero_link', 'Ссылка' ),
       ) ),
+      Field::make( 'image', 'crb_main_brand_photo', 'Картинка для блока БРЕНД (О нас)' )->set_value_type( 'url'),
       Field::make( 'complex', 'crb_advantages', 'Преимущества' )
         ->add_fields( array(
           Field::make( 'image', 'crb_advantages_photo', 'Картинка' )->set_value_type( 'url'),

@@ -64,19 +64,18 @@ Template Name: Страница НОВОСТИ
 					  	'posts_per_page' => 10, 
 					  ) );
 					  if ($custom_query_news->have_posts()) : while ($custom_query_news->have_posts()) : $custom_query_news->the_post(); ?>
-					  	<a href="<?php echo get_the_permalink(); ?>">
-				  			<div class="p_posts__item swiper-slide">
+			  			<div class="p_posts__item swiper-slide">
+			  				<a href="<?php echo get_the_permalink(); ?>">
 				  				<div class="p_posts__item-img object-fit">
 				  					<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 				  				</div>
 				  				<div class="p_posts__item-title">
 				  					<?php the_title(); ?>
 				  				</div>
-				  			</div>
-			  			</a>
+			  				</a>
+			  			</div>
 						<?php endwhile; endif; ?>
 					</div>
-
 				</div>
 				<div class="swiper-button-next swiper-posts-button-next"></div>
 				<div class="swiper-button-prev swiper-posts-button-prev"></div>

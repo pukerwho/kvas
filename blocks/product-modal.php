@@ -104,14 +104,15 @@
 													<?php the_title(); ?>	
 												</div>
 											</div>
-										<?php endwhile; endif; ?>
+										<?php endwhile; endif; wp_reset_postdata(); ?>
 									</div>
 									<div class="swiper-button-next swiper-products-button-next"></div>
 									<div class="swiper-button-prev swiper-products-button-prev"></div>
+									<div class="d-flex justify-content-center">
+									<div class="swiper-innerproduct-pagination"></div>	
 								</div>
-								<div class="d-flex justify-content-center">
-									<div class="swiper-pagination swiper-innerproduct-pagination"></div>	
 								</div>
+								
 							</div>
 						</div>
 					</div>

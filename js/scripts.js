@@ -117,6 +117,7 @@ var swiperProductsFunc = function() {
   if ($(document).width() > 760) {
     var swiperProducts = new Swiper('.swiper-products', {
       slidesPerView: 3,
+      clickable: true,
       loop: true,
       pagination: {
         el: '.swiper-mainproducts-pagination',
@@ -129,6 +130,7 @@ var swiperProductsFunc = function() {
   } else {
     var swiperProducts = new Swiper('.swiper-products', {
       slidesPerView: 1,
+      clickable: true,
       loop: true,
       pagination: {
         el: '.swiper-mainproducts-pagination',
@@ -146,6 +148,7 @@ var swiperProductsSimilarFunc = function() {
     var swiperSimilarProducts = new Swiper('.swiper-products-similar', {
       slidesPerView: 3,
       loop: true,
+      preventClicks: false,
       pagination: {
         el: '.swiper-innerproduct-pagination',
       },
@@ -153,18 +156,11 @@ var swiperProductsSimilarFunc = function() {
         nextEl: '.swiper-products-button-next',
         prevEl: '.swiper-products-button-prev',
       },
-    })
-  } else {
-    var swiperSimilarProducts = new Swiper('.swiper-products-similar', {
-      slidesPerView: 1,
-      loop: true,
-      pagination: {
-        el: '.swiper-innerproduct-pagination',
-      },
-      navigation: {
-        nextEl: '.swiper-products-button-next',
-        prevEl: '.swiper-products-button-prev',
-      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+      }
     })
   }
 }
@@ -179,6 +175,7 @@ function scrollToTop(value) {
       scrollTop: (targetScroll - 100)
   }, 500);
   swiperProductsSimilarFunc();
+  $(window).trigger('resize');
 }
 
 $('.p_products__slide').on('click', function(){
@@ -198,7 +195,7 @@ $('.p_products__modal-close').on('click', function(){
 
 //POSTS 
 if ($(document).width() > 760) {
-  var swiperPosts = new Swiper('.p_posts__slider', {
+  var swiperCompPosts = new Swiper('.p_posts__slider', {
     slidesPerView: 3,
     loop: true,
     pagination: {
@@ -208,11 +205,10 @@ if ($(document).width() > 760) {
       nextEl: '.swiper-posts-button-next',
       prevEl: '.swiper-posts-button-prev',
     },
-  })
-}
-
+  }) 
+} 
 if ($(document).width() < 760) {
-  var swiperPosts = new Swiper('.p_posts__slider', {
+  var swiperMobilePosts = new Swiper('.p_posts__slider', {
     slidesPerView: 2,
     loop: true,
     pagination: {
