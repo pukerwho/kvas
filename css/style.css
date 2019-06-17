@@ -12062,6 +12062,7 @@ button.swiper-pagination-bullet {
       height: calc(100vh - 110px); }
 
   .main-hero-swiper-pagination {
+    position: relative;
     bottom: 50px !important;
     margin-left: 15px; }
 
