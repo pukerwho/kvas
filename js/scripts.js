@@ -43,19 +43,17 @@ $('.p_faq__item').on('click', function(){
 
 //MAIN HERO
 var swiperMainHeroFunc = function() {
-  if ($(document).width() > 760) {
-    var swiperProducts = new Swiper('.main-hero-swiper', {
-      slidesPerView: 1,
-      loop: true,
-      effect: 'fade',
-      autoplay: {
-        delay: 5000,
-      },
-      pagination: {
-        el: '.main-hero-swiper-pagination',
-      },
-    })
-  }
+  var swiperProducts = new Swiper('.main-hero-swiper', {
+    slidesPerView: 1,
+    loop: true,
+    effect: 'fade',
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: '.main-hero-swiper-pagination',
+    },
+  })
 }
 
 swiperMainHeroFunc();

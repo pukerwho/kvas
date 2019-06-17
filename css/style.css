@@ -11963,6 +11963,22 @@ button.swiper-pagination-bullet {
     width: 100%;
     padding: 0 30px;
     margin-bottom: 60px; }
+  .p_products__slide {
+    padding: 0; }
+    .p_products__slide-top {
+      height: 280px; }
+    .p_products__slide-cover {
+      height: 243px; }
+    .p_products__slide-photo img {
+      height: 255px; }
+    .p_products__slide-volume {
+      font-size: 18px;
+      z-index: 1; }
+      .p_products__slide-volume img {
+        width: 16px;
+        margin: 5px; }
+    .p_products__slide-title {
+      font-size: 21px; }
   .p_products__modal-grid {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -12038,7 +12054,15 @@ button.swiper-pagination-bullet {
       left: -webkit-calc(50% - 15px);
       left: calc(50% - 15px); }
 
+  .main-hero {
+    height: -webkit-calc(100vh - 110px);
+    height: calc(100vh - 110px); }
+    .main-hero-swiper {
+      height: -webkit-calc(100vh - 110px);
+      height: calc(100vh - 110px); }
+
   .main-hero-swiper-pagination {
+    bottom: 50px !important;
     margin-left: 15px; }
 
   .testresult__modal-box {

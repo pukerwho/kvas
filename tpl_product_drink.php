@@ -34,7 +34,7 @@ Template Name: Продукты НАПИТКИ
 					)
 				) );
 				if ($custom_query_products->have_posts()) : while ($custom_query_products->have_posts()) : $custom_query_products->the_post(); ?>
-				<div class="col-md-4">
+				<div class="col-6 col-md-4 col-lg-4">
 					<div class="p_products__slide" data-product-slide="product-<?php echo get_the_id(); ?>">
 						<div class="p_products__slide-top">
 							<div class="p_products__slide-cover" style="background-color: <?php echo carbon_get_the_post_meta('crb_product_color') ?>;"></div>
