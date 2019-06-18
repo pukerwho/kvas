@@ -227,6 +227,8 @@ Template Name: Главная страница
 									</div>
 								<?php endwhile; endif; wp_reset_postdata(); ?>
 							</div>
+							<div class="swiper-button-next swiper-products-button-next"></div>
+							<div class="swiper-button-prev swiper-products-button-prev"></div>
 						</div>
 						<div class="d-flex justify-content-center">
 							<div class="swiper-mainproducts-pagination"></div>	
