@@ -11999,6 +11999,10 @@ button.swiper-pagination-bullet {
         margin: 5px; }
     .p_products__slide-title {
       font-size: 21px; }
+  .p_products .swiper-products {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 25px; }
   .p_products__modal-grid {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -12108,10 +12112,10 @@ button.swiper-pagination-bullet {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding-bottom: 25px;
     padding-bottom: 25px; }
   .footer__logo {
-    width: 100%;
-    text-align: center; }
+    display: none; }
   .footer__center {
     width: 100%; }
   .footer__menu .menu {
