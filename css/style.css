@@ -12019,6 +12019,10 @@ button.swiper-pagination-bullet {
     .p_products__modal-item:nth-child(3) {
       width: 50%;
       padding: 0 15px; }
+  .p_products__modal .swiper-products-similar {
+    margin-bottom: 25px !important; }
+  .p_products__modal .swiper-innerproduct-pagination {
+    margin-bottom: 50px; }
   .p_products__modal-text {
     height: 155px;
     font-size: 16px;
