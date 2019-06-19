@@ -9658,12 +9658,19 @@ a:hover {
       background-color: #eaf1f8;
       text-align: center;
       text-transform: uppercase;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
       padding: 10px; }
       .header__top-item img {
         height: 30px;
         margin-right: 20px; }
-    .header__top a:first-of-type .header__top-item {
+    .header__top a:hover .header__top-item {
       color: #c40b15;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    .header__top a:first-of-type .header__top-item {
       background-color: #f4faff; }
   .header .current_page_item {
     -webkit-border-radius: 21px;
