@@ -20,7 +20,7 @@
 </head>
 <body <?php echo body_class(); ?>>
   <!-- <div class="preloader"></div> -->
-  
+  <?php if( !is_page_template( 'tpl_main.php' )): ?>
   <header id="header" class="header" role="banner">
     <div class="container">
       <div class="row">
@@ -32,18 +32,29 @@
               </a>
             </div>
             <div class="header__center">
-              <div class="header__top">
-                <a href="#">
-                  <div class="header__top-item">
-                    <img src="<?php bloginfo('template_url') ?>/img/kvas-icon.svg" alt=""> Квас Арсеньевский
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="header__top-item">
-                    <img src="<?php bloginfo('template_url') ?>/img/water.svg" alt=""> Напиток Арсеньевский
-                  </div>
-                </a>
-              </div>
+              <?php 
+              $args_main = [
+                  'post_type' => 'page',
+                  'fields' => 'ids',
+                  'nopaging' => true,
+                  'meta_key' => '_wp_page_template',
+                  'meta_value' => 'tpl_main.php'
+              ];
+              $pages_main = get_posts( $args_main );
+              foreach ( $pages_main as $page_main ): ?>
+                <div class="header__top">
+                  <a href="<?php echo get_page_url('tpl_kvas') ?>">
+                    <div class="header__top-item">
+                      <img src="<?php echo carbon_get_post_meta($page_main, 'crb_main_icon_one') ?>" alt=""> <?php echo carbon_get_post_meta($page_main, 'crb_main_name_one') ?>
+                    </div>
+                  </a>
+                  <a href="<?php echo get_page_url('tpl_drink') ?>">
+                    <div class="header__top-item">
+                      <img src="<?php echo carbon_get_post_meta($page_main, 'crb_main_icon_two') ?>" alt=""> <?php echo carbon_get_post_meta($page_main, 'crb_main_name_two') ?>
+                    </div>
+                  </a>
+                </div>
+              <?php endforeach; ?>
               <?php wp_nav_menu([
                 'theme_location' => 'head_menu',
                 'container' => 'nav',
@@ -104,18 +115,29 @@
   <div class="mobile-show">
     <div class="mobile-cover">
       <div>
-        <div class="header__top">
-          <a href="#">
-            <div class="header__top-item">
-              <img src="<?php bloginfo('template_url') ?>/img/kvas-icon.svg" alt=""> Квас Арсеньевский
-            </div>
-          </a>
-          <a href="#">
-            <div class="header__top-item">
-              <img src="<?php bloginfo('template_url') ?>/img/water.svg" alt=""> Напиток Арсеньевский
-            </div>
-          </a>
-        </div>
+        <?php 
+        $args_main = [
+            'post_type' => 'page',
+            'fields' => 'ids',
+            'nopaging' => true,
+            'meta_key' => '_wp_page_template',
+            'meta_value' => 'tpl_main.php'
+        ];
+        $pages_main = get_posts( $args_main );
+        foreach ( $pages_main as $page_main ): ?>
+          <div class="header__top">
+            <a href="<?php echo get_page_url('tpl_kvas') ?>">
+              <div class="header__top-item">
+                <img src="<?php echo carbon_get_post_meta($page_main, 'crb_main_icon_one') ?>" alt=""> <?php echo carbon_get_post_meta($page_main, 'crb_main_name_one') ?>
+              </div>
+            </a>
+            <a href="<?php echo get_page_url('tpl_drink') ?>">
+              <div class="header__top-item">
+                <img src="<?php echo carbon_get_post_meta($page_main, 'crb_main_icon_two') ?>" alt=""> <?php echo carbon_get_post_meta($page_main, 'crb_main_name_two') ?>
+              </div>
+            </a>
+          </div>
+        <?php endforeach; ?>
       </div>
       <?php wp_nav_menu([
         'theme_location' => 'head_menu',
@@ -133,4 +155,5 @@
       </div>
     </div>
   </div>
+  <?php endif; ?>
   <section id="content" role="main">

@@ -9,6 +9,21 @@ function crb_page_theme_options() {
     ->where( 'post_type', '=', 'page' )
     ->where( 'post_template', '=', 'tpl_main.php' )
     ->add_fields( array(
+      Field::make( 'separator', 'crb_separator_main_one', 'ПЕРВЫЙ продукт' ),
+      Field::make( 'text', 'crb_main_name_one', 'Название ПРОДУКТА 1' ),
+      Field::make( 'image', 'crb_main_icon_one', 'Иконка ПРОДУКТА 1' )->set_value_type( 'url'),
+      Field::make( 'image', 'crb_main_photo_one', 'Фон ПРОДУКТА 1' )->set_value_type( 'url'),
+      Field::make( 'color', 'crb_main_color_one', 'Цвет фона ПРОДУКТА 1' ),
+      Field::make( 'separator', 'crb_separator_main_two', 'ВТОРОЙ продукт' ),
+      Field::make( 'text', 'crb_main_name_two', 'Название ПРОДУКТА 2' ),
+      Field::make( 'image', 'crb_main_icon_two', 'Иконка ПРОДУКТА 2' )->set_value_type( 'url'),
+      Field::make( 'image', 'crb_main_photo_two', 'Фон ПРОДУКТА 2' )->set_value_type( 'url'),
+      Field::make( 'color', 'crb_main_color_two', 'Цвет фона ПРОДУКТА 2' ),
+    ) );
+  Container::make( 'post_meta', 'More' )
+    ->where( 'post_type', '=', 'page' )
+    ->where( 'post_template', '=', 'tpl_kvas.php' )
+    ->add_fields( array(
       Field::make( 'complex', 'crb_main_hero', 'Главный слайдер' )
         ->set_layout( 'tabbed-horizontal')
         ->add_fields( array(
@@ -25,6 +40,27 @@ function crb_page_theme_options() {
       ) ),
       Field::make( 'textarea', 'crb_main_questions_description', 'Текст для блока ОСТАЛИСЬ ВОПРОСЫ' ),
       Field::make( 'textarea', 'crb_main_adv_description', 'Текст для блока ПРЕИМУЩЕСТВА' ),
+    ) );
+  Container::make( 'post_meta', 'More' )
+    ->where( 'post_type', '=', 'page' )
+    ->where( 'post_template', '=', 'tpl_drink.php' )
+    ->add_fields( array(
+      Field::make( 'complex', 'crb_drink_hero', 'Главный слайдер' )
+        ->set_layout( 'tabbed-horizontal')
+        ->add_fields( array(
+          Field::make( 'image', 'crb_drink_hero_photo', 'Картинка' )->set_value_type( 'url'),
+          Field::make( 'textarea', 'crb_drink_hero_title', 'Заголовок' ),
+          Field::make( 'textarea', 'crb_drink_hero_description', 'Описание' ),
+          Field::make( 'text', 'crb_main_drink_link', 'Ссылка' ),
+      ) ),
+      Field::make( 'image', 'crb_drink_brand_photo', 'Картинка для блока БРЕНД (О нас)' )->set_value_type( 'url'),
+      Field::make( 'complex', 'crb_drink_advantages', 'Преимущества' )
+        ->add_fields( array(
+          Field::make( 'image', 'crb_drink_advantages_photo', 'Картинка' )->set_value_type( 'url'),
+          Field::make( 'text', 'crb_drink_advantages_text', 'Преимущество' ),
+      ) ),
+      Field::make( 'textarea', 'crb_drink_questions_description', 'Текст для блока ОСТАЛИСЬ ВОПРОСЫ' ),
+      Field::make( 'textarea', 'crb_drink_adv_description', 'Текст для блока ПРЕИМУЩЕСТВА' ),
     ) );
   Container::make( 'post_meta', 'More' )
     ->where( 'post_type', '=', 'page' )

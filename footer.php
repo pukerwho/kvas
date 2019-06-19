@@ -1,4 +1,5 @@
     </section>
+    <?php if( !is_page_template( 'tpl_main.php' )): ?>
     <footer class="footer" id="footer">
     	<div class="container">
     		<div class="row">
@@ -141,6 +142,7 @@
 	    </div>
 	  </div>
 	  <div class="modal__bg"></div>
+	  <?php endif ?>
 	  <?php endif ?>
     <?php wp_footer(); ?>
 </body>
