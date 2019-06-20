@@ -10,6 +10,7 @@ Template Name: Страница НАПИТОК
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="p_main">
+	<!-- 
 	<div class="main-hero-swiper swiper-container">
 		<div class="swiper-wrapper">
 			<?php 
@@ -44,7 +45,7 @@ Template Name: Страница НАПИТОК
 		</div>
 		<div class="main-hero-swiper-pagination"></div>
 	</div>
-	
+	-->
 	<div class="p_main__brand">
 		<div class="p_main__brand-content">
 			<div class="container">
