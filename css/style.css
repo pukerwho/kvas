@@ -12056,8 +12056,10 @@ button.swiper-pagination-bullet {
         opacity: .7; }
       .prerol__block:hover .prerol__title {
         font-size: 24px; }
-    .prerol__icon img {
-      width: 35px; }
+    .prerol__icon {
+      margin-bottom: 10px; }
+      .prerol__icon img {
+        height: 65px; }
     .prerol__title {
       font-size: 24px; }
 
