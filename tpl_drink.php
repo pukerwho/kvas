@@ -132,17 +132,28 @@ Template Name: Страница НАПИТОК
 								if ($custom_query_products->have_posts()) : while ($custom_query_products->have_posts()) : $custom_query_products->the_post(); ?>
 									<?php $i++; $i=$i/1.5 ?>
 									<div class="p_products__slide swiper-slide animate-puk" data-product-slide="product-<?php echo get_the_id(); ?>" >
-										<div class="animate-puk-mask">
-											<div class="animate-puk" data-effect="fade-up" data-delay="<?php echo $i ?>s">
-												<div class="p_products__slide-top">
-													<!-- <div class="p_products__slide-cover" style="background-color: <?php echo carbon_get_the_post_meta('crb_product_color') ?>;"></div> -->
-													<div class="p_products__slide-photo object-fit">
-														<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+										<div class="pc-show">
+											<div class="animate-puk-mask">
+												<div class="animate-puk" data-effect="fade-up" data-delay="<?php echo $i ?>s">
+													<div class="p_products__slide-top">
+														<div class="p_products__slide-photo object-fit">
+															<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+														</div>
+													</div>
+													<div class="p_products__slide-title">
+														<?php the_title(); ?>	
 													</div>
 												</div>
-												<div class="p_products__slide-title">
-													<?php the_title(); ?>	
+											</div>
+										</div>
+										<div class="mobile-show">
+											<div class="p_products__slide-top">
+												<div class="p_products__slide-photo object-fit">
+													<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 												</div>
+											</div>
+											<div class="p_products__slide-title">
+												<?php the_title(); ?>	
 											</div>
 										</div>
 									</div>
