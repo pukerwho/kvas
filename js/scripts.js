@@ -114,7 +114,7 @@ if ($(document).width() < 992) {
 
 //PRODUCTS 
 var swiperProductsFunc = function() {
-  if ($(document).width() > 760) {
+  if ($(document).width() > 992) {
     var swiperProducts = new Swiper('.swiper-products', {
       slidesPerView: 3,
       clickable: true,
@@ -194,7 +194,7 @@ $('.p_products__modal-close').on('click', function(){
 })
 
 //POSTS 
-if ($(document).width() > 760) {
+if ($(document).width() > 992) {
   var swiperCompPosts = new Swiper('.p_posts__slider', {
     slidesPerView: 3,
     loop: true,
@@ -207,7 +207,7 @@ if ($(document).width() > 760) {
     },
   }) 
 } 
-if ($(document).width() < 760) {
+if ($(document).width() < 992) {
   var swiperMobilePosts = new Swiper('.p_posts__slider', {
     slidesPerView: 2,
     loop: true,
