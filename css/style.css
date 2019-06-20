@@ -8990,7 +8990,7 @@ a:hover {
     background: #de0027; }
 
 .swiper-products-similar {
-  margin-bottom: 70px !important; }
+  margin-bottom: 30px !important; }
 
 /* SLIDER PUK */
 .slider-puk-container {
@@ -10340,7 +10340,8 @@ a:hover {
         -webkit-box-shadow: 0 4px 17px 0 rgba(184, 184, 184, 0.5);
         box-shadow: 0 4px 17px 0 rgba(184, 184, 184, 0.5);
         overflow: hidden;
-        padding-top: 40px; }
+        padding-top: 40px;
+        padding-bottom: 40px; }
       .p_products__modal-title {
         color: #023753;
         font-family: Oswald-Bold;
