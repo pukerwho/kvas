@@ -52,7 +52,7 @@ Template Name: Страница НАПИТОК
 				<div class="row">
 					<div class="col-md-4">
 						<div class="animate-puk-mask">
-							<div class="p_main__brand-title animate-puk" data-effect="fade-up" data-delay="0.8s">
+							<div class="p_main__brand-title" data-effect="fade-up" data-delay="0.8s">
 								<?php
 									if ( function_exists( 'pll_the_languages' ) ) {
 								 		pll_e('Бренд Арсеніївський'); 
@@ -71,13 +71,13 @@ Template Name: Страница НАПИТОК
             $pages_brands = get_posts( $args_brand );
             foreach ( $pages_brands as $pages_brand ): ?> 
             	<div class="animate-puk-mask">
-								<div class="p_main__brand-description animate-puk" data-effect="fade-up" data-delay="1.2s">
+								<div class="p_main__brand-description" data-effect="fade-up" data-delay="1.2s">
 									<?php echo carbon_get_post_meta($pages_brand, 'crb_brand_description') ?>
 								</div>
 							</div>
 						<div class="animate-puk-mask">
 							<a href="<?php echo get_page_url('tpl_brand') ?>">
-								<div class="kvas-button animate-puk" data-effect="fade-up" data-delay="1.5s">
+								<div class="kvas-button" data-effect="fade-up" data-delay="1.5s">
 									<?php
 										if ( function_exists( 'pll_the_languages' ) ) {
 									 		pll_e('Дізнатися більше'); 
