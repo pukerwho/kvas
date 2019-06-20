@@ -12055,6 +12055,8 @@ button.swiper-pagination-bullet {
     .prerol__title {
       font-size: 24px; }
 
+  .p_posts__first-title a {
+    font-size: 28px; }
   .p_posts__first-img {
     height: auto;
     margin-bottom: 30px; }
@@ -12077,9 +12079,9 @@ button.swiper-pagination-bullet {
       .p_posts__first-info .d-flex:last-of-type {
         margin-bottom: 0; }
   .p_posts .swiper-posts-button-prev {
-    left: 0; }
+    left: 10px; }
   .p_posts .swiper-posts-button-next {
-    right: 0; }
+    right: 10px; }
   .p_post__first-img {
     margin-bottom: 30px; }
   .p_post__grid {
