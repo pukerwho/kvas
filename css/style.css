@@ -12072,6 +12072,10 @@ button.swiper-pagination-bullet {
       margin-bottom: 20px; }
       .p_posts__first-info .d-flex:last-of-type {
         margin-bottom: 0; }
+  .p_posts .swiper-posts-button-prev {
+    left: 0; }
+  .p_posts .swiper-posts-button-next {
+    right: 0; }
   .p_post__first-img {
     margin-bottom: 30px; }
   .p_post__grid {
