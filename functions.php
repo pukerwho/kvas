@@ -24,6 +24,10 @@ if( !isset( $content_width ) ) {
     $content_width = 960;
 }
 
+if (!session_id()) {
+    session_start();
+}
+
 require_once get_template_directory() . '/inc/carbon-fields/carbon-fields-plugin.php';
 require_once get_template_directory() . '/inc/custom-fields/post-meta.php';
 require_once get_template_directory() . '/inc/custom-fields/pages-meta.php';
@@ -38,6 +42,8 @@ add_action( 'admin_init', 'check_polylang_plugin' );
 register_nav_menus( array(
     'head_menu' => 'Меню в шапке',
     'footer_menu' => 'Меню в подвале',
+    'head_menu_drink' => 'Меню в шапке НАПИТКИ',
+    'footer_menu_drink' => 'Меню в подвале НАПИТКИ',
 ) );
 
 // Register sidebars

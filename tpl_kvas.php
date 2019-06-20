@@ -3,6 +3,9 @@
 Template Name: Страница КВАС
 */
 ?>
+<?php 
+	$_SESSION['menuvar'] = 'kvas'; 
+?>
 
 <?php get_header(); ?>
 
