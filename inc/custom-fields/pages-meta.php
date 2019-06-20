@@ -51,7 +51,7 @@ function crb_page_theme_options() {
           Field::make( 'image', 'crb_drink_hero_photo', 'Картинка' )->set_value_type( 'url'),
           Field::make( 'textarea', 'crb_drink_hero_title', 'Заголовок' ),
           Field::make( 'textarea', 'crb_drink_hero_description', 'Описание' ),
-          Field::make( 'text', 'crb_main_drink_link', 'Ссылка' ),
+          Field::make( 'text', 'crb_drink_drink_link', 'Ссылка' ),
       ) ),
       Field::make( 'image', 'crb_drink_brand_photo', 'Картинка для блока БРЕНД (О нас)' )->set_value_type( 'url'),
       Field::make( 'complex', 'crb_drink_advantages', 'Преимущества' )
