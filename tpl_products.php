@@ -20,7 +20,7 @@ Template Name: Страница ПРОДУКТЫ
 					<div class="col-md-4 col-lg-4">
 						<div class="p_products__slide" data-product-slide="product-<?php echo get_the_id(); ?>">
 							<div class="p_products__slide-top">
-								<div class="p_products__slide-cover" style="background-color: <?php echo carbon_get_the_post_meta('crb_product_color') ?>;"></div>
+								<!-- <div class="p_products__slide-cover" style="background-color: <?php echo carbon_get_the_post_meta('crb_product_color') ?>;"></div> -->
 								<div class="p_products__slide-photo">
 									<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 								</div>
@@ -79,7 +79,7 @@ Template Name: Страница ПРОДУКТЫ
 								if ($custom_query_products->have_posts()) : while ($custom_query_products->have_posts()) : $custom_query_products->the_post(); ?>
 									<div class="p_products__slide swiper-slide" data-product-slide="product-<?php echo get_the_id(); ?>">
 										<div class="p_products__slide-top">
-											<div class="p_products__slide-cover" style="background-color: <?php echo carbon_get_the_post_meta('crb_product_color') ?>;"></div>
+											<!-- <div class="p_products__slide-cover" style="background-color: <?php echo carbon_get_the_post_meta('crb_product_color') ?>;"></div> -->
 											<div class="p_products__slide-photo">
 												<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 											</div>

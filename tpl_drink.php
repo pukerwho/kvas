@@ -135,7 +135,7 @@ Template Name: Страница НАПИТОК
 										<div class="animate-puk-mask">
 											<div class="animate-puk" data-effect="fade-up" data-delay="<?php echo $i ?>s">
 												<div class="p_products__slide-top">
-													<div class="p_products__slide-cover" style="background-color: <?php echo carbon_get_the_post_meta('crb_product_color') ?>;"></div>
+													<!-- <div class="p_products__slide-cover" style="background-color: <?php echo carbon_get_the_post_meta('crb_product_color') ?>;"></div> -->
 													<div class="p_products__slide-photo object-fit">
 														<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 													</div>

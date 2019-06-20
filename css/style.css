@@ -9062,20 +9062,37 @@ a:hover {
   position: relative;
   overflow: hidden;
   margin-bottom: 40px; }
+  .main-hero:after {
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-image: -webkit-gradient(linear, right top, left top, from(#ed4630), color-stop(85%), to(rgba(237, 70, 48, 0.5)));
+    background-image: -webkit-linear-gradient(right, #ed4630, 85%, rgba(237, 70, 48, 0.5));
+    background-image: -o-linear-gradient(right, #ed4630, 85%, rgba(237, 70, 48, 0.5));
+    background-image: linear-gradient(to left, #ed4630, 85%, rgba(237, 70, 48, 0.5));
+    opacity: 0.8;
+    z-index: 1; }
   .main-hero__title {
+    position: relative;
     color: #ffffff;
     font-family: Oswald-Bold;
     font-size: 55px;
+    z-index: 2;
     margin-bottom: 40px; }
   .main-hero__description {
+    position: relative;
     color: #ffffff;
     font-family: Oswald-Regular;
     font-size: 20px;
+    z-index: 2;
     margin-bottom: 40px; }
   .main-hero .kvas-button__white {
     position: relative;
     color: #bd0511;
-    overflow: hidden; }
+    overflow: hidden;
+    z-index: 2; }
     .main-hero .kvas-button__white:after {
       content: '';
       width: 25px;
@@ -9096,12 +9113,14 @@ a:hover {
       transform: rotate(25deg);
       -webkit-transition: left 1s;
       -o-transition: left 1s;
-      transition: left 1s; }
+      transition: left 1s;
+      z-index: 2; }
     .main-hero .kvas-button__white:hover:after {
       left: 200%;
       -webkit-transition: left 1s;
       -o-transition: left 1s;
-      transition: left 1s; }
+      transition: left 1s;
+      z-index: 2; }
 
 .main-hero-swiper {
   width: 100%;
@@ -9135,11 +9154,24 @@ a:hover {
   position: relative;
   overflow: hidden;
   margin-bottom: 45px; }
+  .hero:after {
+    content: '';
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-image: -webkit-gradient(linear, right top, left top, from(#ed4630), color-stop(85%), to(rgba(237, 70, 48, 0.5)));
+    background-image: -webkit-linear-gradient(right, #ed4630, 85%, rgba(237, 70, 48, 0.5));
+    background-image: -o-linear-gradient(right, #ed4630, 85%, rgba(237, 70, 48, 0.5));
+    background-image: linear-gradient(to left, #ed4630, 85%, rgba(237, 70, 48, 0.5));
+    opacity: 0.8;
+    z-index: 1; }
   .hero-content {
     position: absolute;
     left: 50%;
     padding-top: 150px; }
   .hero-subtitle {
+    position: relative;
     color: #ffffff;
     font-family: Oswald-Regular;
     font-size: 20px;
@@ -9153,8 +9185,10 @@ a:hover {
     transition: all 0.55s;
     -webkit-transition-delay: 0.2s;
     -o-transition-delay: 0.2s;
-    transition-delay: 0.2s; }
+    transition-delay: 0.2s;
+    z-index: 2; }
   .hero-title {
+    position: relative;
     color: #ffffff;
     font-family: Oswald-Bold;
     font-size: 55px;
@@ -9168,9 +9202,11 @@ a:hover {
     transition: all 0.65s;
     -webkit-transition-delay: 0.35s;
     -o-transition-delay: 0.35s;
-    transition-delay: 0.35s; }
+    transition-delay: 0.35s;
+    z-index: 2; }
   .hero-text {
     width: 70%;
+    position: relative;
     color: #ffffff;
     font-family: Oswald-Light;
     font-size: 20px;
@@ -9180,7 +9216,8 @@ a:hover {
     transition: all 0.55s;
     -webkit-transition-delay: 0.5s;
     -o-transition-delay: 0.5s;
-    transition-delay: 0.5s; }
+    transition-delay: 0.5s;
+    z-index: 2; }
   .hero-bottom {
     position: absolute;
     bottom: 95px;
@@ -9191,7 +9228,8 @@ a:hover {
     transition: all 0.55s;
     -webkit-transition-delay: 0.6s;
     -o-transition-delay: 0.6s;
-    transition-delay: 0.6s; }
+    transition-delay: 0.6s;
+    z-index: 2; }
     .hero-bottom__text {
       position: relative;
       color: #ffffff;
@@ -10452,7 +10490,8 @@ a:hover {
         color: #023753;
         font-family: Oswald-Regular;
         font-size: 20px;
-        opacity: 0.6; }
+        opacity: 0.6;
+        z-index: 2; }
         .p_products__slide-volume img {
           width: 24px;
           margin-right: 10px; }
@@ -12200,6 +12239,11 @@ button.swiper-pagination-bullet {
     -ms-flex-align: center;
     align-items: center;
     background-position: 65%; }
+    .hero:after {
+      width: 100%;
+      background-image: none;
+      background-color: #ed4630;
+      opacity: .65; }
     .hero-content {
       left: 15px;
       padding-top: 0; }
@@ -12215,6 +12259,11 @@ button.swiper-pagination-bullet {
   .main-hero {
     height: -webkit-calc(100vh - 110px);
     height: calc(100vh - 110px); }
+    .main-hero:after {
+      width: 100%;
+      background-image: none;
+      background-color: #ed4630;
+      opacity: .75; }
     .main-hero-swiper {
       height: -webkit-calc(100vh - 110px);
       height: calc(100vh - 110px); }
@@ -12224,7 +12273,7 @@ button.swiper-pagination-bullet {
       margin-bottom: 30px; }
 
   .main-hero-swiper-pagination {
-    position: relative;
+    bottom: 9% !important;
     margin-left: 15px; }
 
   .testresult__modal-box {
