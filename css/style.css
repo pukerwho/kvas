@@ -11084,7 +11084,8 @@ a:hover {
     position: relative;
     margin-bottom: 50px; }
     .prerol__icon img {
-      height: 80px; }
+      height: 80px;
+      padding: 0 10px; }
 
 .animate-puk-mask {
   overflow: hidden; }
