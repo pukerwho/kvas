@@ -9711,6 +9711,11 @@ a:hover {
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s; }
+      .header__top a:hover .header__top-item img path {
+        fill: #c40b15;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
     .header__top a:first-of-type .header__top-item {
       background-color: #f4faff; }
   .header .current_page_item {
@@ -11079,7 +11084,7 @@ a:hover {
     position: relative;
     margin-bottom: 50px; }
     .prerol__icon img {
-      width: 50px; }
+      height: 80px; }
 
 .animate-puk-mask {
   overflow: hidden; }
