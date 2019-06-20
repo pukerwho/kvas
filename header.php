@@ -148,12 +148,21 @@
           </div>
         <?php endforeach; ?>
       </div>
-      <?php wp_nav_menu([
-        'theme_location' => 'head_menu',
-        'container' => 'nav',
-        'container_class' => 'header__menu',
-        'menu_id' => 'head_menu',
-      ]); ?>
+      <?php if ( $_SESSION['menuvar'] === 'drink' ): ?>
+        <?php wp_nav_menu([
+          'theme_location' => 'head_menu_drink',
+          'container' => 'nav',
+          'container_class' => 'header__menu',
+          'menu_id' => 'head_menu',
+        ]); ?>
+      <?php else: ?>
+        <?php wp_nav_menu([
+          'theme_location' => 'head_menu',
+          'container' => 'nav',
+          'container_class' => 'header__menu',
+          'menu_id' => 'head_menu',
+        ]); ?>
+      <?php endif; ?>
       <div class="mobile-cover-line"></div>
       <div class="mobile-lang">
         <?php 
