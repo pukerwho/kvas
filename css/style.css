@@ -12016,6 +12016,7 @@ button.swiper-pagination-bullet {
       font-size: 24px; }
 
   .p_posts__first-img {
+    height: auto;
     margin-bottom: 30px; }
   .p_posts__first-info {
     -webkit-box-orient: vertical;
@@ -12064,7 +12065,7 @@ button.swiper-pagination-bullet {
     .p_brewery__item:last-of-type {
       margin-bottom: 0; }
   .p_brewery__img {
-    height: 350px; }
+    height: auto; }
   .p_main__brand-content {
     height: 350px; }
   .p_main__brand-title {

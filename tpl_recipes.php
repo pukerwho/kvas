@@ -30,12 +30,12 @@ Template Name: Страница РЕЦЕПТЫ
 	  if ($custom_query_recipes->have_posts()) : while ($custom_query_recipes->have_posts()) : $custom_query_recipes->the_post(); ?>
 	  	<div class="p_posts__first">
 				<div class="row align-items-center justify-content-center">
-					<div class="col-md-5">
+					<div class="col-lg-5">
 						<div class="p_posts__first-img object-fit">
 							<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 						</div>
 					</div>
-					<div class="col-md-5">
+					<div class="col-lg-5">
 						<div class="p_posts__first-title">
 							<a href="<?php echo get_the_permalink(); ?>">
 								<?php the_title(); ?>
