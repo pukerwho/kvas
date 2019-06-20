@@ -292,8 +292,6 @@ Template Name: Страница НАПИТОК
 							<?php endwhile; endif; ?>
 						</div>
 					</div>
-					<div class="swiper-button-next swiper-posts-button-next"></div>
-					<div class="swiper-button-prev swiper-posts-button-prev"></div>
 				</div>
 			</div>
 			<div class="d-flex justify-content-center">
