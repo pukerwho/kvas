@@ -174,8 +174,14 @@ Template Name: Страница КВАС
 		</div>
 		<?php endforeach; ?>
 		<div class="p_main__brand-photo object-fit">
-			<img src="<?php echo carbon_get_the_post_meta('crb_main_brand_photo') ?>" alt="">
+			<div class="p_main__brand-photo-inner">
+				<div class="p_main__brand-photo-img" style="background-image: url(<?php echo carbon_get_the_post_meta('crb_main_brand_photo') ?>); background-size: cover"></div> 
+				<!-- <img src="<?php echo carbon_get_the_post_meta('crb_main_brand_photo') ?>" alt=""> -->
+			</div>
 		</div>
+	</div>
+	<div class="imgsize">
+		<img src="<?php echo carbon_get_the_post_meta('crb_main_brand_photo') ?>" alt="">
 	</div>
 	<div class="p_main__products">
 		<div class="container">

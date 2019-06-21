@@ -248,6 +248,17 @@ if ($(document).width() < 760) {
   })
 }
 
+//BRAND 
+if ($('.p_main__brand-photo-inner').length > 0){
+
+  heightWindow = $(window).height();
+  brandBlockPhotoHeight = $('.imgsize').height();
+  $('.imgsize').hide();
+  brandBlockPhotoWidth = $('.p_main__brand-photo-inner').width();
+  $('.p_main__brand-content').css({'height':brandBlockPhotoHeight})
+  $('.p_main__brand-photo-inner').css({'padding-top':'calc( ' + brandBlockPhotoHeight + ' / ' + brandBlockPhotoWidth + ' * 100% )'})
+}
+
 //RECIPES PAGE 
 if ($('.p_posts__first-info').length > 0){
   var heightPostInfo = $('.p_posts__first-info').height();
