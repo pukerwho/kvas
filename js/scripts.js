@@ -254,12 +254,14 @@ if ($('.p_main__brand-photo-inner').length > 0){
   brandBlockPhotoHeight = $('.imgsize').height();
   brandBlockPhotoWidth = $('.imgsize').width();
   brandBlockWidth = $('.p_main__brand-photo').width();
-  newBlockHeight = (brandBlockPhotoHeight * brandBlockPhotoWidth)/brandBlockWidth;
+  newBlockHeight = brandBlockWidth * 66 / 100; 
+  // newBlockHeight = (brandBlockPhotoHeight * brandBlockPhotoWidth)/brandBlockWidth;
   $('.imgsize').hide();
-  console.log('ширина блока',brandBlockWidth);
-  
+  console.log(newBlockHeight);
+
   $('.p_main__brand-content').css({'height':newBlockHeight})
-  $('.p_main__brand-photo-inner').css({'padding-top':'calc( ' + newBlockHeight + ' / ' + brandBlockWidth + ' * 100% )'})
+  $('.p_main__brand-photo-inner').css({'padding-top':'66%'})
+  // $('.p_main__brand-photo-inner').css({'padding-top':'calc( ' + brandBlockWidth + ' / ' + brandBlockPhotoHeight + ' * 100% )'})
 }
 
 //RECIPES PAGE 
