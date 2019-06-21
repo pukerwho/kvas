@@ -250,13 +250,16 @@ if ($(document).width() < 760) {
 
 //BRAND 
 if ($('.p_main__brand-photo-inner').length > 0){
-
   heightWindow = $(window).height();
   brandBlockPhotoHeight = $('.imgsize').height();
+  brandBlockPhotoWidth = $('.imgsize').width();
+  brandBlockWidth = $('.p_main__brand-photo').width();
+  newBlockHeight = (brandBlockPhotoHeight * brandBlockPhotoWidth)/brandBlockWidth;
   $('.imgsize').hide();
-  brandBlockPhotoWidth = $('.p_main__brand-photo-inner').width();
-  $('.p_main__brand-content').css({'height':brandBlockPhotoHeight})
-  $('.p_main__brand-photo-inner').css({'padding-top':'calc( ' + brandBlockPhotoHeight + ' / ' + brandBlockPhotoWidth + ' * 100% )'})
+  console.log('ширина блока',brandBlockWidth);
+  
+  $('.p_main__brand-content').css({'height':newBlockHeight})
+  $('.p_main__brand-photo-inner').css({'padding-top':'calc( ' + newBlockHeight + ' / ' + brandBlockWidth + ' * 100% )'})
 }
 
 //RECIPES PAGE 
