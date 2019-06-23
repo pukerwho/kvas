@@ -39,7 +39,7 @@ function crb_page_theme_options() {
           Field::make( 'text', 'crb_advantages_text', 'Преимущество' ),
       ) ),
       Field::make( 'image', 'crb_main_questions_photo', 'Картинка для блока ОСТАЛИСЬ ВОПРОСЫ' )->set_value_type( 'url'),
-      Field::make( 'textarea', 'crb_main_questions_description', 'Текст для блока ОСТАЛИСЬ ВОПРОСЫ' ),
+      Field::make( 'textarea', 'crb_main_questions_description', 'Текст для блока ОСТАЛИСЬ ВОПРОСЫ (лимит 120 символов)' )->set_attribute('maxLength', 120),
       Field::make( 'textarea', 'crb_main_adv_description', 'Текст для блока ПРЕИМУЩЕСТВА' ),
     ) );
   Container::make( 'post_meta', 'More' )
@@ -61,7 +61,7 @@ function crb_page_theme_options() {
           Field::make( 'text', 'crb_drink_advantages_text', 'Преимущество' ),
       ) ),
       Field::make( 'image', 'crb_drink_questions_photo', 'Картинка для блока ОСТАЛИСЬ ВОПРОСЫ' )->set_value_type( 'url'),
-      Field::make( 'textarea', 'crb_drink_questions_description', 'Текст для блока ОСТАЛИСЬ ВОПРОСЫ' ),
+      Field::make( 'textarea', 'crb_drink_questions_description', 'Текст для блока ОСТАЛИСЬ ВОПРОСЫ (лимит 120 символов)' )->set_attribute('maxLength', 120),
       Field::make( 'textarea', 'crb_drink_adv_description', 'Текст для блока ПРЕИМУЩЕСТВА' ),
     ) );
   Container::make( 'post_meta', 'More' )
