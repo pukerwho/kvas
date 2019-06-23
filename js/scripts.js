@@ -250,18 +250,32 @@ if ($(document).width() < 760) {
 
 //BRAND 
 if ($('.p_main__brand-photo-inner').length > 0){
-  heightWindow = $(window).height();
-  brandBlockPhotoHeight = $('.imgsize').height();
-  brandBlockPhotoWidth = $('.imgsize').width();
   brandBlockWidth = $('.p_main__brand-photo').width();
   newBlockHeight = brandBlockWidth * 66 / 100; 
-  // newBlockHeight = (brandBlockPhotoHeight * brandBlockPhotoWidth)/brandBlockWidth;
-  $('.imgsize').hide();
-  console.log(newBlockHeight);
-
   $('.p_main__brand-content').css({'height':newBlockHeight})
   $('.p_main__brand-photo-inner').css({'padding-top':'66%'})
-  // $('.p_main__brand-photo-inner').css({'padding-top':'calc( ' + brandBlockWidth + ' / ' + brandBlockPhotoHeight + ' * 100% )'})
+}
+
+if ($('.page-template-tpl_brand .hero').length > 0){
+  heroBlockWidth = $('.hero').width();
+  heroBlockHeight = heroBlockWidth * 47.46 / 100; 
+  $('.hero').css({'height':heroBlockHeight})
+}
+
+//QUESTIONS
+if ($('.p_main__questions-photo-inner').length > 0){
+  questionsBlockWidth = $('.p_main__questions-photo ').width();
+  newquestionsHeight = questionsBlockWidth * 58 / 100; 
+  $('.p_main__questions-content').css({'height':newquestionsHeight})
+  $('.p_main__questions-photo-inner').css({'padding-top':'58%'})
+}
+
+//HERO SWIPER
+
+if ($('.main-hero-swiper').length > 0){
+  heroBlockWidth = $('.main-hero-swiper').width();
+  heroBlockHeight = heroBlockWidth * 47.22 / 100; 
+  $('.main-hero-swiper').css({'height':heroBlockHeight})
 }
 
 //RECIPES PAGE 

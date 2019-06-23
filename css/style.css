@@ -9052,7 +9052,7 @@ a:hover {
 .main-hero {
   min-width: 100%;
   width: 100%;
-  height: 682px;
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9126,8 +9126,7 @@ a:hover {
       z-index: 2; }
 
 .main-hero-swiper {
-  width: 100%;
-  height: 682px; }
+  width: 100%; }
   .main-hero-swiper-pagination {
     display: -webkit-box;
     display: -webkit-flex;
@@ -9170,9 +9169,22 @@ a:hover {
     opacity: 0.8;
     z-index: 1; }
   .hero-content {
+    height: 100%;
     position: absolute;
     left: 50%;
-    padding-top: 150px; }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .hero-subtitle {
     position: relative;
     color: #ffffff;
@@ -9919,6 +9931,19 @@ a:hover {
     height: 470px;
     position: absolute;
     left: 0; }
+    .p_main__questions-photo-inner {
+      height: 0;
+      position: relative;
+      background-color: #ffffff;
+      overflow: hidden; }
+    .p_main__questions-photo-img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0; }
     .p_main__questions-photo img {
       width: 100%;
       height: 100%;
@@ -12132,26 +12157,32 @@ button.swiper-pagination-bullet {
   .p_brewery__img {
     height: auto; }
   .p_main__brand {
-    height: 350px;
     position: relative; }
     .p_main__brand-content {
-      height: 350px; }
+      /*height: 350px !important;*/ }
     .p_main__brand-title {
       position: relative;
+      font-size: 25px;
       z-index: 2;
-      margin-bottom: 30px; }
+      margin-bottom: 25px; }
     .p_main__brand-description {
       position: relative;
+      font-size: 16px;
       z-index: 2;
-      margin-bottom: 30px; }
+      margin-bottom: 25px; }
     .p_main__brand-photo {
       width: 100%;
       height: 100%;
       display: block;
       opacity: .3; }
+      .p_main__brand-photo-inner {
+        /*height: 100%;
+        padding-top: 0 !important;*/ }
     .p_main__brand .kvas-button {
       position: relative;
-      z-index: 2; }
+      font-size: 14px;
+      z-index: 2;
+      padding: 10px 12px; }
   .p_main__questions {
     position: relative; }
     .p_main__questions-photo {
@@ -12165,18 +12196,22 @@ button.swiper-pagination-bullet {
       padding: 30px 0; }
     .p_main__questions-title {
       position: relative;
+      font-size: 28px;
       z-index: 3; }
     .p_main__questions-line {
       position: relative;
       z-index: 3; }
     .p_main__questions-description {
       position: relative;
-      z-index: 3; }
+      z-index: 3;
+      margin-bottom: 20px; }
     .p_main__questions-absolute {
       display: none; }
     .p_main__questions .kvas-button__white {
       position: relative;
-      z-index: 3; }
+      font-size: 15px;
+      z-index: 3;
+      padding: 10px 17px; }
   .p_main__advantages-description {
     width: 100%;
     padding: 0 30px;
@@ -12257,8 +12292,8 @@ button.swiper-pagination-bullet {
     height: 345px; }
 
   .hero {
-    height: -webkit-calc(100vh - 110px);
-    height: calc(100vh - 110px);
+    height: -webkit-calc(100vh - 110px) !important;
+    height: calc(100vh - 110px) !important;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -12275,19 +12310,21 @@ button.swiper-pagination-bullet {
       opacity: .65; }
     .hero-content {
       left: 15px;
-      padding-top: 0; }
+      padding-top: 0;
+      padding-right: 15px; }
     .hero-title {
-      font-size: 40px;
-      margin-bottom: 40px; }
+      font-size: 35px;
+      margin-bottom: 30px; }
     .hero-text {
       width: 100%; }
     .hero-bottom {
       left: -webkit-calc(50% - 15px);
-      left: calc(50% - 15px); }
+      left: calc(50% - 15px);
+      bottom: 80px; }
 
   .main-hero {
-    height: -webkit-calc(100vh - 110px);
-    height: calc(100vh - 110px);
+    height: -webkit-calc(100vh - 110px) !important;
+    height: calc(100vh - 110px) !important;
     background-position: 25% !important; }
     .main-hero:after {
       width: 100%;
@@ -12295,8 +12332,9 @@ button.swiper-pagination-bullet {
       background-color: #ed4630;
       opacity: .75; }
     .main-hero-swiper {
-      height: -webkit-calc(100vh - 110px);
-      height: calc(100vh - 110px); }
+      height: -webkit-calc(100vh - 110px) !important;
+      height: calc(100vh - 110px) !important;
+      background-position: 25% !important; }
     .main-hero__title {
       font-size: 38px; }
     .main-hero .kvas-button__white {
@@ -12356,9 +12394,34 @@ button.swiper-pagination-bullet {
     align-items: center;
     line-height: 2.5; } }
 @media (min-width: 768px) and (max-width: 992px) {
+  .main-hero__title {
+    font-size: 55px; }
+  .main-hero__description {
+    font-size: 26px; }
+
+  .p_main__brand-title {
+    font-size: 38px;
+    margin-bottom: 30px; }
+  .p_main__brand-description {
+    font-size: 21px;
+    margin-bottom: 30px; }
+  .p_main__brand .kvas-button {
+    font-size: 16px;
+    padding: 12px 17px; }
+
   .p_main__brand-photo {
-    height: 350px;
+    /*height: 350px;*/
     display: block; }
+
+  .p_main__questions-title {
+    font-size: 38px;
+    margin-bottom: 30px; }
+  .p_main__questions-description {
+    font-size: 21px;
+    margin-bottom: 30px; }
+  .p_main__questions .kvas-button__white {
+    font-size: 16px;
+    padding: 12px 17px; }
 
   .p_main__questions-photo {
     width: 100%;

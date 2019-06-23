@@ -92,7 +92,9 @@ Template Name: Страница НАПИТОК
 		</div>
 		<?php endforeach; ?>
 		<div class="p_main__brand-photo object-fit">
-			<img src="<?php echo carbon_get_the_post_meta('crb_drink_brand_photo') ?>" alt="">
+			<div class="p_main__brand-photo-inner">
+				<div class="p_main__brand-photo-img" style="background-image: url(<?php echo carbon_get_the_post_meta('crb_drink_brand_photo') ?>); background-size: cover"></div> 
+			</div>
 		</div>
 	</div>
 	<div class="p_main__products">
@@ -190,14 +192,26 @@ Template Name: Страница НАПИТОК
 		</div>
 	</div>
 	<div class="p_main__questions">
+		<?php 
+    $args_questions = [
+        'post_type' => 'page',
+        'fields' => 'ids',
+        'nopaging' => true,
+        'meta_key' => '_wp_page_template',
+        'meta_value' => 'tpl_drink.php'
+    ];
+    $pages_questions = get_posts( $args_questions );
+    foreach ( $pages_questions as $pages_question ): ?>
 		<div class="p_main__questions-photo object-fit">
-			<img src="<?php bloginfo('template_url') ?>/img/questions.jpg" alt="">
+			<div class="p_main__questions-photo-inner">
+				<div class="p_main__questions-photo-img" style="background-image: url(<?php echo carbon_get_post_meta($pages_question, 'crb_drink_questions_photo') ?>); background-size: cover"></div>
+			</div>
 		</div>
 		<div class="p_main__questions-absolute"></div>
 		<div class="p_main__questions-content">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-5 offset-md-7">
+					<div class="col-lg-5 offset-lg-7">
 						<div class="p_main__questions-title">
 							<?php
 								if ( function_exists( 'pll_the_languages' ) ) {
@@ -207,18 +221,7 @@ Template Name: Страница НАПИТОК
 						</div>
 						<div class="p_main__questions-line"></div>
 						<div class="p_main__questions-description">
-							<?php 
-		          $args_questions = [
-		              'post_type' => 'page',
-		              'fields' => 'ids',
-		              'nopaging' => true,
-		              'meta_key' => '_wp_page_template',
-		              'meta_value' => 'tpl_drink.php'
-		          ];
-		          $pages_questions = get_posts( $args_questions );
-		          foreach ( $pages_questions as $pages_question ): ?>
-		          	<?php echo carbon_get_post_meta($pages_question, 'crb_drink_questions_description'); ?>
-		          <?php endforeach; ?>	
+	          	<?php echo carbon_get_post_meta($pages_question, 'crb_drink_questions_description'); ?>
 						</div>
 						<a href="<?php echo get_page_url('tpl_faq') ?>">
 							<div class="kvas-button__white">
@@ -233,6 +236,7 @@ Template Name: Страница НАПИТОК
 				</div>
 			</div>
 		</div>
+		<?php endforeach; ?>
 	</div>
 	<!-- Новости -->
 	<div class="p_posts">

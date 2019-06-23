@@ -8,6 +8,7 @@ Template Name: Страница БРЕНД
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class="hero" style="background: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-position: center top; background-size: cover;">
+		
 		<div class="hero-content">
 			<div class="animate-puk-mask">
 				<div class="hero-subtitle">

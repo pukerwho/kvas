@@ -17,10 +17,10 @@ Template Name: Страница КВАС
 			$mainsliders = carbon_get_the_post_meta('crb_main_hero');
 			foreach( $mainsliders as $mainslider ): ?>
 				<div class="swiper-slide">
-					<div class="main-hero" style="background-image: url(<?php echo $mainslider['crb_main_hero_photo'] ?>); background-position: center center; background-repeat: no-repeat; ">
+					<div class="main-hero" style="background-image: url(<?php echo $mainslider['crb_main_hero_photo'] ?>); background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; ">
 						<div class="container">
 							<div class="row">
-								<div class="col-md-5 offset-md-7">
+								<div class="col-lg-5 offset-lg-7">
 									<div class="main-hero__title">
 										<?php echo $mainslider['crb_main_hero_title'] ?>
 									</div>
@@ -132,7 +132,7 @@ Template Name: Страница КВАС
 		<div class="p_main__brand-content">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-lg-4">
 						<div class="animate-puk-mask">
 							<div class="p_main__brand-title animate-puk" data-effect="fade-up" data-delay="0.8s">
 								<?php
@@ -179,9 +179,6 @@ Template Name: Страница КВАС
 				<!-- <img src="<?php echo carbon_get_the_post_meta('crb_main_brand_photo') ?>" alt=""> -->
 			</div>
 		</div>
-	</div>
-	<div class="imgsize">
-		<img src="<?php echo carbon_get_the_post_meta('crb_main_brand_photo') ?>" alt="">
 	</div>
 	<div class="p_main__products">
 		<div class="container">
@@ -278,14 +275,26 @@ Template Name: Страница КВАС
 		</div>
 	</div>
 	<div class="p_main__questions">
+		<?php 
+    $args_questions = [
+        'post_type' => 'page',
+        'fields' => 'ids',
+        'nopaging' => true,
+        'meta_key' => '_wp_page_template',
+        'meta_value' => 'tpl_kvas.php'
+    ];
+    $pages_questions = get_posts( $args_questions );
+    foreach ( $pages_questions as $pages_question ): ?>
 		<div class="p_main__questions-photo object-fit">
-			<img src="<?php bloginfo('template_url') ?>/img/questions.jpg" alt="">
+			<div class="p_main__questions-photo-inner">
+				<div class="p_main__questions-photo-img" style="background-image: url(<?php echo carbon_get_post_meta($pages_question, 'crb_main_questions_photo') ?>); background-size: cover"></div>
+			</div>
 		</div>
 		<div class="p_main__questions-absolute"></div>
 		<div class="p_main__questions-content">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-5 offset-md-7">
+					<div class="col-lg-5 offset-lg-7">
 						<div class="p_main__questions-title">
 							<?php
 								if ( function_exists( 'pll_the_languages' ) ) {
@@ -295,18 +304,7 @@ Template Name: Страница КВАС
 						</div>
 						<div class="p_main__questions-line"></div>
 						<div class="p_main__questions-description">
-							<?php 
-		          $args_questions = [
-		              'post_type' => 'page',
-		              'fields' => 'ids',
-		              'nopaging' => true,
-		              'meta_key' => '_wp_page_template',
-		              'meta_value' => 'tpl_kvas.php'
-		          ];
-		          $pages_questions = get_posts( $args_questions );
-		          foreach ( $pages_questions as $pages_question ): ?>
-		          	<?php echo carbon_get_post_meta($pages_question, 'crb_main_questions_description'); ?>
-		          <?php endforeach; ?>	
+	          	<?php echo carbon_get_post_meta($pages_question, 'crb_main_questions_description'); ?>
 						</div>
 						<a href="<?php echo get_page_url('tpl_faq') ?>">
 							<div class="kvas-button__white">
@@ -321,6 +319,7 @@ Template Name: Страница КВАС
 				</div>
 			</div>
 		</div>
+		<?php endforeach; ?>
 	</div>
 	<div class="p_main__advantages">
 		<div class="animate-puk-mask">
