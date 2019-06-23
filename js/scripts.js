@@ -266,8 +266,9 @@ if ($('.page-template-tpl_brand .hero').length > 0){
 if ($('.p_main__questions-photo-inner').length > 0){
   questionsBlockWidth = $('.p_main__questions-photo ').width();
   newquestionsHeight = questionsBlockWidth * 58 / 100; 
-  $('.p_main__questions-content').css({'height':newquestionsHeight})
-  $('.p_main__questions-photo-inner').css({'padding-top':'58%'})
+  $('.p_main__questions-content').css({'height':newquestionsHeight});
+  $('.p_main__questions-absolute').css({'height':newquestionsHeight});
+  $('.p_main__questions-photo-inner').css({'padding-top':'58%'});
 }
 
 //HERO SWIPER
