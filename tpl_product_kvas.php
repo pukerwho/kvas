@@ -204,8 +204,10 @@ Template Name: Продукты КВАС
 										<div class="swiper-products-similar swiper-container">
 											<div class="swiper-wrapper">
 												<?php
+												$current_id = get_the_ID();
 												$custom_query_products_inner = new WP_Query( array( 
 													'post_type' => 'products',
+													'post__not_in' => array($current_id),
 													'meta_query' => array(
 														array(
 															'key'     => 'crb_product_kvas',

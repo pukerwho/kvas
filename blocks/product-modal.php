@@ -74,6 +74,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="p_products__modal-title">
+									<?php echo get_the_id(); ?>
 									<?php
 										if ( function_exists( 'pll_the_languages' ) ) {
 									 		pll_e('Схожі товари'); 
@@ -88,7 +89,11 @@
 								<div class="swiper-products-similar swiper-container">
 									<div class="swiper-wrapper">
 										<?php
-										$custom_query_products_inner = new WP_Query( array( 'post_type' => 'products') );
+										$current_id = get_the_ID();
+										$custom_query_products_inner = new WP_Query( array( 
+											'post_type' => 'products',
+											'post__not_in' => array($current_id),
+										) );
 										if ($custom_query_products_inner->have_posts()) : while ($custom_query_products_inner->have_posts()) : $custom_query_products_inner->the_post(); ?>
 											<div class="p_products__slide swiper-slide" data-product-slide="product-<?php echo get_the_id(); ?>">
 												<div class="p_products__slide-top">
