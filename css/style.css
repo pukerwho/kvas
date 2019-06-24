@@ -10485,7 +10485,17 @@ a:hover {
     .p_products__slide {
       cursor: pointer;
       padding: 0 30px;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      /*&:hover {
+      	.p_products__slide-photo img {
+      		-ms-transform: scale(1.1);
+      		-webkit-transform: scale(1.1);
+      		transform: scale(1.1);
+      		-webkit-transition: all 0.45s;
+      		-o-transition: all 0.45s;
+      		transition: all 0.45s;
+      	}
+      }*/ }
       .p_products__slide-top {
         height: auto;
         position: relative;
@@ -10541,13 +10551,6 @@ a:hover {
         .p_products__slide-volume img {
           width: 24px;
           margin-right: 10px; }
-      .p_products__slide:hover .p_products__slide-photo img {
-        -ms-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-        -webkit-transition: all 0.45s;
-        -o-transition: all 0.45s;
-        transition: all 0.45s; }
     .p_products__inner {
       padding-top: 30px;
       padding-bottom: 30px; }
